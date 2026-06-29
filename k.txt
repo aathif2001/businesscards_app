@@ -1,0 +1,15 @@
+# ============================================================
+# TWILIO CREDENTIALS — Keep this file SECRET, never commit it
+# ============================================================
+
+# Get these from: https://console.twilio.com
+TWILIO_ACCOUNT_SID=AC################################
+TWILIO_AUTH_TOKEN=################################
+
+# Your Twilio WhatsApp number (the one you purchased)
+# Format: whatsapp:+1415XXXXXXX  (include country code)
+TWILIO_WHATSAPP_FROM=whatsapp:+1################
+
+# YOUR personal WhatsApp number (where you want to receive alerts)
+# Format: whatsapp:+94XXXXXXXXX  (include country code, no spaces)
+TWILIO_WHATSAPP_TO=whatsapp:+94XXXXXXXXX
