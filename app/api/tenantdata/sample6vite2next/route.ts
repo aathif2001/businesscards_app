@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { TENANT_REGISTRY } from '../tenants';
 import twilio from 'twilio';
 
 // Initialize Twilio client with your credentials from environment variables
@@ -9,9 +10,19 @@ const client = twilio(
 
 export async function POST(req: NextRequest) {
   try {
+    // Parse the form data sent from the frontend
+    // This is a dedicated route for "colombobuildingsupplies" — slug is fixed.
+    const { name, email, phone, message } = await req.json();
+    const tenant = TENANT_REGISTRY['colombobuildingsupplies'];
+
+    // Guard: tenant must exist before accessing its properties
+    if (!tenant) {
+      return NextResponse.json({ error: 'Tenant not found' }, { status: 404 });
+    }
+
     // Guard: ensure all required env vars are set
     const from = process.env.TWILIO_WHATSAPP_FROM;
-    const to   = process.env.TWILIO_WHATSAPP_TO;
+    const to = tenant.whatsappTo;
     const templateSid = process.env.TWILIO_WHATSAPP_TEMPLATE_SID;
 
     if (!from || !to) {
@@ -21,10 +32,6 @@ export async function POST(req: NextRequest) {
         { status: 500 }
       );
     }
-
-    // Parse the form data sent from the frontend
-    const body = await req.json();
-    const { name, email, phone, message } = body;
 
     // Validate that required fields exist
     if (!name || !email) {
