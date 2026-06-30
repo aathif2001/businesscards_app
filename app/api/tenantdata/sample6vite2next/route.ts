@@ -12,6 +12,7 @@ export async function POST(req: NextRequest) {
     // Guard: ensure all required env vars are set
     const from = process.env.TWILIO_WHATSAPP_FROM;
     const to   = process.env.TWILIO_WHATSAPP_TO;
+    const templateSid = process.env.TWILIO_WHATSAPP_TEMPLATE_SID;
 
     if (!from || !to) {
       console.error('Missing Twilio environment variables.');
@@ -31,26 +32,19 @@ export async function POST(req: NextRequest) {
         { error: 'Name and email are required.' },
         { status: 400 }
       );
-    }
-
-    // Build the WhatsApp notification message
-    const whatsappMessage = `
-🔔 *New Quote Request Received!*
-
-👤 *Name:* ${name}
-📧 *Email:* ${email}
-📞 *Phone:* ${phone || 'Not provided'}
-💬 *Message:*
-${message || 'No additional message'}
-
-_Submitted via your website contact form._
-    `.trim();
-
+    }    
+    
     // Send via Twilio WhatsApp
     await client.messages.create({
       from,   // ✅ guaranteed string — TypeScript is happy
       to,     // ✅ guaranteed string — TypeScript is happy
-      body: whatsappMessage,
+      contentSid: templateSid,
+      contentVariables: JSON.stringify({
+      "1": name,
+      "2": email,
+      "3": phone || 'Not provided',
+      "4": message,
+    }), 
     });
 
     // Return success to the frontend
