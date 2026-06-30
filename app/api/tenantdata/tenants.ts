@@ -6,7 +6,7 @@ export interface TenantConfig {
 export const TENANT_REGISTRY: Record<string, TenantConfig> = {
   colombobuildingsupplies: {
     name: "Colombo Building Supplies",
-    whatsappTo: "whatsapp:+94767839096", // Unique to them
+    whatsappTo: "whatsapp:+94763671514", // Unique to them
   },
   vertexmarketing: {
     name: "Vertex Marketing",
