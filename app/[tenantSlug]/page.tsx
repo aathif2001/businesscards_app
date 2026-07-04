@@ -1,5 +1,4 @@
 import Sample6View from '../../components/templates/sample6vite2next/PageView';
-import Spacesbysenuri from '../../components/templates/spacesbysenuri/PageView';
 import InteriorDesign1 from '../../components/templates/interiordesign1/PageView';
 import FreshSpaces from '../../components/templates/freshspaces/PageView';
 import LankaTradeLink from '../../components/templates/lankatradelink/PageView';
@@ -10,10 +9,6 @@ export default async function TenantPage({ params }: { params: Promise<{ tenantS
 
   if (tenantSlug === 'colombobuildingsupplies') {
     return <Sample6View />; // Loads Sample 6 + its 15 private components safely
-  }
-
-  if (tenantSlug === 'spacesbysenuri') {
-    return <Spacesbysenuri />; // Loads Sample 6 + its 15 private components safely
   }
 
   if (tenantSlug === 'studiointeriors') {
@@ -29,4 +24,4 @@ export default async function TenantPage({ params }: { params: Promise<{ tenantS
   }
 
   return notFound();
-}
+}

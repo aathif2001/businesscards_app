@@ -48,15 +48,9 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div
-                className="w-10 h-10 flex items-center justify-center relative"
-                style={{ flexShrink: 0 }}
-              >
-                <div
-                  className="absolute inset-0 rounded-sm rotate-45"
-                  style={{ border: "1.5px solid #C5A880" }}
-                />
-                <span style={{ color: "#C5A880", fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>ID</span>
-              </div>
+              className="w-20 h-20 flex items-center justify-center">
+              <img src="./documents/loadingscreen/studiointeriorslogoonly.svg" alt="Studio Interiors" /> 
+            </div>
               <div className="leading-tight">
                 <div className="text-white font-semibold text-sm">Studio</div>
                 <div style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase">Interiors</div>
