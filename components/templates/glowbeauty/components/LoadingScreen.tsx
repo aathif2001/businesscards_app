@@ -26,20 +26,17 @@ export function LoadingScreen({ carouselReady }: LoadingScreenProps) {
   return (
     <div
       className={`fixed inset-0 z-[9999] pointer-events-none transition-opacity duration-300 ${fading ? 'opacity-0' : 'opacity-100'}`}
-      style={{ backgroundColor: "#FFFBF7" }}
+      style={{ backgroundColor: "#FFFFFF" }}
     >
-      <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-        <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: "#3A2232" }}>
-          <span style={{ color: "#D9B48F" }} className="font-bold text-2xl">GB</span>
-        </div>
-        <div className="text-center">
-          <div style={{ color: "#3A2232" }} className="font-semibold text-lg">Glow Beauty Lounge</div>
-          <div style={{ color: "#D9B48F" }} className="text-xs tracking-widest uppercase mt-0.5">Negombo</div>
-        </div>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <img src="./documents/loadingscreen/glowbeauty.svg" alt="Glow Beauty Lounge" style={{ width: 200 }} />
       </div>
+
+      {/* Powered By Section */}
       <div className="absolute bottom-6 right-6">
         <img src="./poweredby.png" alt="Powered by" style={{ height: 50 }} />
       </div>
+
       <div className="absolute bottom-0 left-0 w-full h-[3px]" style={{ backgroundColor: "#F7EFE9" }}>
         <div className="h-full" style={{ backgroundColor: "#D9B48F", animation: "ls-progress 2s ease-out forwards" }} />
       </div>

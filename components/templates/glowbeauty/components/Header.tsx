@@ -21,8 +21,9 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: "#D9B48F" }}>
-              <span className="text-white font-bold text-sm">GB</span>
+            <div
+              className="w-12 h-12 flex items-center justify-center">
+              <img src="./documents/loadingscreen/glowbeautylogoonly1.svg" alt="Glow Beauty Lounge" /> 
             </div>
             <div className="leading-tight">
               <div className="text-white font-semibold text-sm tracking-wide">Glow Beauty</div>

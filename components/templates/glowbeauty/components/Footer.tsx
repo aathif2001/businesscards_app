@@ -31,9 +31,10 @@ export function Footer() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: "#D9B48F" }}>
-                <span className="text-white font-bold text-xs">GB</span>
-              </div>
+              <div
+              className="w-12 h-12 flex items-center justify-center">
+              <img src="./documents/loadingscreen/glowbeautylogoonly1.svg" alt="Glow Beauty Lounge" /> 
+            </div>
               <div className="leading-tight">
                 <div className="text-white font-semibold text-sm">Glow Beauty Lounge</div>
                 <div style={{ color: "#D9B48F" }} className="text-xs tracking-widest uppercase opacity-80">Negombo</div>
