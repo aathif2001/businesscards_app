@@ -34,28 +34,10 @@ export function LoadingScreen({ carouselReady }: LoadingScreenProps) {
             style={{ backgroundColor: "#FAF8F5" }}
         >
             {/* Center — brand mark */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                {/* Geometric logo mark */}
-                <div className="relative w-16 h-16">
-                    <div
-                        className="absolute inset-0 rounded-sm rotate-45"
-                        style={{ border: "2px solid #B8935A" }}
-                    />
-                    <div
-                        className="absolute inset-[6px] rounded-sm rotate-45"
-                        style={{ backgroundColor: "#2C2416" }}
-                    />
-                    <div
-                        className="absolute inset-0 flex items-center justify-center"
-                        style={{ color: "#B8935A", fontSize: 14, fontWeight: 700, letterSpacing: 1 }}
-                    >
-                        ID
-                    </div>
-                </div>
-                <p style={{ color: "#6B6054", fontSize: 11, letterSpacing: "0.25em" }} className="uppercase">
-                    Studio Interiors
-                </p>
-            </div>
+             <div className="absolute inset-0 flex items-center justify-center">
+                <img src="./documents/loadingscreen/studiointeriors.svg" alt="Colombo Building Supplies" style={{ width: 125}} />    
+            </div>  
+
 
             {/* Powered by */}
             <div className="absolute bottom-6 right-6 flex items-center gap-2 opacity-70">
