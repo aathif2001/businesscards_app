@@ -35,7 +35,7 @@ export function LoadingScreen({ carouselReady }: LoadingScreenProps) {
         >
             {/* Center — brand mark */}
              <div className="absolute inset-0 flex items-center justify-center">
-                <img src="./documents/loadingscreen/studiointeriors.svg" alt="Colombo Building Supplies" style={{ width: 125}} />    
+                <img src="./documents/loadingscreen/studiointeriors.svg" alt="Colombo Building Supplies" style={{ width: 100}} />    
             </div>  
 
 
