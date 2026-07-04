@@ -1,6 +1,7 @@
 import Sample6View from '../../components/templates/sample6vite2next/PageView';
 import Spacesbysenuri from '../../components/templates/spacesbysenuri/PageView';
 import InteriorDesign1 from '../../components/templates/interiordesign1/PageView';
+import FreshSpaces from '../../components/templates/freshspaces/PageView';
 import { notFound } from 'next/navigation';
 
 export default async function TenantPage({ params }: { params: Promise<{ tenantSlug: string }> }) {
@@ -18,5 +19,9 @@ export default async function TenantPage({ params }: { params: Promise<{ tenantS
     return <InteriorDesign1 />; // Interior Design Agency template
   }
 
+  if (tenantSlug === 'freshspaces') {
+    return <FreshSpaces />; // FreshSpaces Sri Lanka — Commercial Cleaning
+  }
+
   return notFound();
-}
+}
