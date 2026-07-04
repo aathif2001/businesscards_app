@@ -26,12 +26,12 @@ export function FloatingContactFABs() {
         aria-label="Call us"
         className="w-12 h-12 rounded-full flex items-center justify-center shadow-xl transition-all active:scale-90 hover:scale-105"
         style={{
-          backgroundColor: "#2C2416",
-          boxShadow: "0 4px 16px rgba(44,36,22,0.5)",
-          border: "2px solid rgba(184,147,90,0.4)",
+          backgroundColor: "#2C3531",
+          boxShadow: "0 4px 16px rgba(26,32,30,0.5)",
+          border: "2px solid rgba(197,168,128,0.4)",
         }}
       >
-        <Phone size={18} style={{ color: "#B8935A" }} />
+        <Phone size={18} style={{ color: "#C5A880" }} />
       </a>
 
       {/* Email */}
@@ -40,12 +40,12 @@ export function FloatingContactFABs() {
         aria-label="Email us"
         className="w-12 h-12 rounded-full flex items-center justify-center shadow-xl transition-all active:scale-90 hover:scale-105"
         style={{
-          backgroundColor: "#2C2416",
-          boxShadow: "0 4px 16px rgba(44,36,22,0.5)",
-          border: "2px solid rgba(184,147,90,0.4)",
+          backgroundColor: "#2C3531",
+          boxShadow: "0 4px 16px rgba(26,32,30,0.5)",
+          border: "2px solid rgba(197,168,128,0.4)",
         }}
       >
-        <Mail size={18} style={{ color: "#B8935A" }} />
+        <Mail size={18} style={{ color: "#C5A880" }} />
       </a>
 
       {/* WhatsApp */}

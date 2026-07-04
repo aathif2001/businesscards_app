@@ -93,7 +93,7 @@ export function BannerCarousel({ onLoaded }: BannerCarouselProps) {
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(to right, rgba(44,36,22,0.85) 0%, rgba(44,36,22,0.50) 55%, rgba(44,36,22,0.15) 100%)",
+                "linear-gradient(to right, rgba(26,32,30,0.85) 0%, rgba(26,32,30,0.50) 55%, rgba(26,32,30,0.15) 100%)",
             }}
           />
 
@@ -103,7 +103,7 @@ export function BannerCarousel({ onLoaded }: BannerCarouselProps) {
               {/* Tag */}
               <span
                 className="inline-block text-white text-xs px-3 py-1 rounded-full mb-3 font-medium tracking-wide"
-                style={{ backgroundColor: "#B8935A" }}
+                style={{ backgroundColor: "#C5A880" }}
               >
                 {slide.tag}
               </span>
@@ -121,7 +121,7 @@ export function BannerCarousel({ onLoaded }: BannerCarouselProps) {
 
               {/* Slide counter */}
               <div className="flex items-center gap-2 mt-4">
-                <span style={{ color: "#B8935A" }} className="text-sm font-semibold">
+                <span style={{ color: "#C5A880" }} className="text-sm font-semibold">
                   {String(current + 1).padStart(2, "0")}
                 </span>
                 <div className="h-px w-8 bg-gray-500" />
@@ -142,9 +142,9 @@ export function BannerCarousel({ onLoaded }: BannerCarouselProps) {
         <a
           href={`tel:${PHONE}`}
           className="flex items-center gap-2.5 pl-3 pr-5 py-2.5 rounded-full text-white text-xs font-semibold shadow-lg transition-all hover:scale-105 active:scale-95"
-          style={{ backgroundColor: "rgba(44,36,22,0.85)", border: "1px solid rgba(255,255,255,0.18)", backdropFilter: "blur(8px)" }}
+          style={{ backgroundColor: "rgba(26,32,30,0.85)", border: "1px solid rgba(255,255,255,0.18)", backdropFilter: "blur(8px)" }}
         >
-          <div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: "#B8935A" }}>
+          <div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: "#C5A880" }}>
             <Phone size={13} className="text-white" />
           </div>
           Call Now
@@ -153,9 +153,9 @@ export function BannerCarousel({ onLoaded }: BannerCarouselProps) {
         <a
           href={`mailto:${EMAIL}`}
           className="flex items-center gap-2.5 pl-3 pr-5 py-2.5 rounded-full text-white text-xs font-semibold shadow-lg transition-all hover:scale-105 active:scale-95"
-          style={{ backgroundColor: "rgba(44,36,22,0.85)", border: "1px solid rgba(255,255,255,0.18)", backdropFilter: "blur(8px)" }}
+          style={{ backgroundColor: "rgba(26,32,30,0.85)", border: "1px solid rgba(255,255,255,0.18)", backdropFilter: "blur(8px)" }}
         >
-          <div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: "#B8935A" }}>
+          <div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: "#C5A880" }}>
             <Mail size={13} className="text-white" />
           </div>
           Email Us
@@ -208,7 +208,7 @@ export function BannerCarousel({ onLoaded }: BannerCarouselProps) {
             style={{
               width: i === current ? 24 : 6,
               height: 6,
-              backgroundColor: i === current ? "#B8935A" : "rgba(255,255,255,0.4)",
+              backgroundColor: i === current ? "#C5A880" : "rgba(255,255,255,0.4)",
             }}
             aria-label={`Go to slide ${i + 1}`}
           />

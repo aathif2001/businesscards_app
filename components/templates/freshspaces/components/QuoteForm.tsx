@@ -53,12 +53,12 @@ export function QuoteForm() {
           {/* Left: Info */}
           <div>
             <div className="inline-flex items-center gap-2 mb-3">
-              <div className="h-px w-8" style={{ backgroundColor: "#22C55E" }} />
-              <span style={{ color: "#22C55E" }} className="text-xs tracking-widest uppercase font-medium">
+              <div className="h-px w-8" style={{ backgroundColor: "#C5A880" }} />
+              <span style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase font-medium">
                 Get Started
               </span>
             </div>
-            <h2 style={{ color: "#0F2A1E" }} className="mb-4">Request Your Free Quote</h2>
+            <h2 style={{ color: "#2C3531" }} className="mb-4">Request Your Free Quote</h2>
             <p className="text-gray-500 text-sm leading-relaxed">
               Tell us about your facility and our team will reach out within 24 hours with a customised cleaning plan and transparent pricing — no commitment required.
             </p>
@@ -72,7 +72,7 @@ export function QuoteForm() {
                 "24/7 support team",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2.5">
-                  <CheckCircle size={16} style={{ color: "#059669" }} />
+                  <CheckCircle size={16} style={{ color: "#C5A880" }} />
                   <span className="text-gray-600 text-sm">{item}</span>
                 </div>
               ))}
@@ -82,20 +82,20 @@ export function QuoteForm() {
           {/* Right: Form */}
           <div
             className="rounded-2xl p-8 border border-gray-100"
-            style={{ backgroundColor: "#F0FFF8" }}
+            style={{ backgroundColor: "#EFF1EE" }}
           >
             {submitted ? (
               <div className="text-center py-12">
-                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ background: "linear-gradient(135deg, #22C55E, #059669)" }}>
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ background: "linear-gradient(135deg, #C5A880, #C5A880)" }}>
                   <CheckCircle size={32} className="text-white" />
                 </div>
-                <h3 style={{ color: "#0F2A1E" }} className="mb-2">Request Sent!</h3>
+                <h3 style={{ color: "#2C3531" }} className="mb-2">Request Sent!</h3>
                 <p className="text-gray-500 text-sm">
                   Thank you, {form.name || "valued client"}. We&apos;ll be in touch within 24 hours.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  style={{ color: "#22C55E" }}
+                  style={{ color: "#C5A880" }}
                   className="mt-6 text-sm underline hover:opacity-80"
                 >
                   Submit another request
@@ -105,7 +105,7 @@ export function QuoteForm() {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-medium mb-1" style={{ color: "#0F2A1E" }}>
+                    <label className="block text-xs font-medium mb-1" style={{ color: "#2C3531" }}>
                       Full Name *
                     </label>
                     <input
@@ -116,12 +116,12 @@ export function QuoteForm() {
                       placeholder="e.g. Chaminda Silva"
                       className="w-full px-3 py-2.5 rounded-lg border text-gray-900 bg-white text-sm focus:outline-none transition-colors"
                       style={{ borderColor: "#e5e7eb" }}
-                      onFocus={(e) => (e.target.style.borderColor = "#22C55E")}
+                      onFocus={(e) => (e.target.style.borderColor = "#C5A880")}
                       onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-medium mb-1" style={{ color: "#0F2A1E" }}>
+                    <label className="block text-xs font-medium mb-1" style={{ color: "#2C3531" }}>
                       Email Address *
                     </label>
                     <input
@@ -133,14 +133,14 @@ export function QuoteForm() {
                       placeholder="you@company.com"
                       className="w-full px-3 py-2.5 rounded-lg border text-gray-900 bg-white text-sm focus:outline-none transition-colors"
                       style={{ borderColor: "#e5e7eb" }}
-                      onFocus={(e) => (e.target.style.borderColor = "#22C55E")}
+                      onFocus={(e) => (e.target.style.borderColor = "#C5A880")}
                       onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium mb-1" style={{ color: "#0F2A1E" }}>
+                  <label className="block text-xs font-medium mb-1" style={{ color: "#2C3531" }}>
                     Phone Number
                   </label>
                   <input
@@ -150,13 +150,13 @@ export function QuoteForm() {
                     placeholder="+94 77 123 4567"
                     className="w-full px-3 py-2.5 rounded-lg border text-gray-900 bg-white text-sm focus:outline-none transition-colors"
                     style={{ borderColor: "#e5e7eb" }}
-                    onFocus={(e) => (e.target.style.borderColor = "#22C55E")}
+                    onFocus={(e) => (e.target.style.borderColor = "#C5A880")}
                     onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium mb-1" style={{ color: "#0F2A1E" }}>
+                  <label className="block text-xs font-medium mb-1" style={{ color: "#2C3531" }}>
                     Additional Details
                   </label>
                   <textarea
@@ -166,7 +166,7 @@ export function QuoteForm() {
                     rows={4}
                     className="w-full px-3 py-2.5 rounded-lg border text-gray-900 bg-white text-sm focus:outline-none transition-colors resize-none"
                     style={{ borderColor: "#e5e7eb" }}
-                    onFocus={(e) => (e.target.style.borderColor = "#22C55E")}
+                    onFocus={(e) => (e.target.style.borderColor = "#C5A880")}
                     onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
                   />
                   <p className="text-gray-400 text-xs mt-1">Pre-filled — feel free to add more details.</p>
@@ -181,7 +181,7 @@ export function QuoteForm() {
                 <button
                   type="submit"
                   disabled={loading}
-                  style={{ background: loading ? "#4a5568" : "#059669" }}
+                  style={{ background: loading ? "#4a5568" : "#C5A880" }}
                   className="w-full text-white py-3 rounded-lg hover:opacity-90 transition-opacity font-medium text-sm disabled:cursor-not-allowed"
                 >
                   {loading ? '⏳ Sending...' : 'Submit Quote Request'}

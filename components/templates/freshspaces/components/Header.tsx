@@ -14,20 +14,20 @@ export function Header() {
   ];
 
   return (
-    <header style={{ backgroundColor: "#0F2A1E" }} className="w-full sticky top-0 z-50">
+    <header style={{ backgroundColor: "#1A201E" }} className="w-full sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div
               className="w-10 h-10 rounded-full flex items-center justify-center"
-              style={{ background: "linear-gradient(135deg, #22C55E, #059669)" }}
+              style={{ background: "linear-gradient(135deg, #C5A880, #C5A880)" }}
             >
               <span className="text-white font-bold text-sm">FS</span>
             </div>
             <div className="leading-tight">
               <div className="text-white font-semibold text-sm tracking-wide">FreshSpaces</div>
-              <div style={{ color: "#22C55E" }} className="text-xs tracking-widest uppercase">Sri Lanka</div>
+              <div style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase">Sri Lanka</div>
             </div>
           </div>
 
@@ -47,12 +47,12 @@ export function Header() {
           {/* Right side */}
           <div className="hidden md:flex items-center gap-4">
             <a href={`tel:${PHONE}`} className="flex items-center gap-2.5">
-              <Phone size={14} style={{ color: "#22C55E" }} />
+              <Phone size={14} style={{ color: "#C5A880" }} />
               <span className="text-sm text-gray-300">077 123 4567</span>
             </a>
             <a href={`sms:${PHONE}?body=${encodeURIComponent(SMS_MSG)}`}>
               <button
-                style={{ background: "#059669" }}
+                style={{ background: "#C5A880" }}
                 className="text-white text-sm px-4 py-2 rounded hover:opacity-90 transition-opacity font-medium"
               >
                 Message
@@ -64,7 +64,7 @@ export function Header() {
           <div className="flex md:hidden items-center">
             <a href={`sms:${PHONE}?body=${encodeURIComponent(SMS_MSG)}`}>
               <button
-                style={{ background: "#059669" }}
+                style={{ background: "#C5A880" }}
                 className="text-white text-sm px-3 py-1 rounded hover:opacity-90 transition-opacity font-medium"
               >
                 Message

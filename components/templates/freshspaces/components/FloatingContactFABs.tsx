@@ -27,12 +27,12 @@ export function FloatingContactFABs() {
         aria-label="Call us"
         className="w-12 h-12 rounded-full flex items-center justify-center shadow-xl transition-all active:scale-90 hover:scale-105"
         style={{
-          backgroundColor: "#0F2A1E",
-          boxShadow: "0 4px 16px rgba(15,42,30,0.5)",
-          border: "2px solid rgba(34,197,94,0.4)",
+          backgroundColor: "#2C3531",
+          boxShadow: "0 4px 16px rgba(26,32,30,0.5)",
+          border: "2px solid rgba(197,168,128,0.4)",
         }}
       >
-        <Phone size={18} style={{ color: "#22C55E" }} />
+        <Phone size={18} style={{ color: "#C5A880" }} />
       </a>
 
       {/* Email */}
@@ -41,12 +41,12 @@ export function FloatingContactFABs() {
         aria-label="Email us"
         className="w-12 h-12 rounded-full flex items-center justify-center shadow-xl transition-all active:scale-90 hover:scale-105"
         style={{
-          backgroundColor: "#0F2A1E",
-          boxShadow: "0 4px 16px rgba(15,42,30,0.5)",
-          border: "2px solid rgba(5,150,105,0.4)",
+          backgroundColor: "#2C3531",
+          boxShadow: "0 4px 16px rgba(26,32,30,0.5)",
+          border: "2px solid rgba(197,168,128,0.4)",
         }}
       >
-        <Mail size={18} style={{ color: "#059669" }} />
+        <Mail size={18} style={{ color: "#C5A880" }} />
       </a>
 
       {/* WhatsApp */}
@@ -58,7 +58,7 @@ export function FloatingContactFABs() {
         className="w-12 h-12 rounded-full flex items-center justify-center shadow-xl transition-all active:scale-90 hover:scale-105"
         style={{
           backgroundColor: "#25D366",
-          boxShadow: "0 4px 16px rgba(37,211,102,0.4)",
+          boxShadow: "0 4px 16px rgba(197,168,128,0.4)",
         }}
       >
         <svg width="20" height="20" viewBox="0 0 24 24" fill="white">

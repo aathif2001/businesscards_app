@@ -11,7 +11,7 @@ const navItems = [
 
 export function Header() {
   return (
-    <header style={{ backgroundColor: "#2C2416" }} className="w-full sticky top-0 z-50">
+    <header style={{ backgroundColor: "#2C3531" }} className="w-full sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
 
@@ -23,7 +23,7 @@ export function Header() {
             </div>
             <div className="leading-tight">
               <div className="text-white font-semibold text-sm tracking-wide">Studio</div>
-              <div style={{ color: "#C9A227" }} className="text-xs tracking-widest uppercase">Interiors</div>
+              <div style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase">Interiors</div>
             </div>
           </div>
 
@@ -43,12 +43,12 @@ export function Header() {
           {/* Right side */}
           <div className="hidden md:flex items-center gap-4">
             <a href="tel:+94771234567" className="flex items-center gap-2.5 text-gray-300 text-sm">
-              <Phone size={14} style={{ color: "#B8935A" }} />
+              <Phone size={14} style={{ color: "#C5A880" }} />
               <span>+94 77 123 4567</span>
             </a>
             <a href="sms:+94771234567?body=Hi,%20I%20would%20like%20to%20book%20a%20consultation.">
               <button
-                style={{ backgroundColor: "#B8935A" }}
+                style={{ backgroundColor: "#C5A880" }}
                 className="text-white text-sm px-4 py-2 rounded hover:opacity-90 transition-opacity font-medium"
               >
                 Book Now
@@ -60,7 +60,7 @@ export function Header() {
           <div className="flex md:hidden items-center">
             <a href="sms:+94771234567?body=Hi,%20I%20would%20like%20to%20book%20a%20consultation.">
               <button
-                style={{ backgroundColor: "#B8935A" }}
+                style={{ backgroundColor: "#C5A880" }}
                 className="text-white text-sm px-3 py-1.5 rounded hover:opacity-90 transition-opacity font-medium"
               >
                 Book Now

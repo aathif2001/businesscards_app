@@ -59,13 +59,13 @@ export function CoreOfferings() {
           {/* Section header */}
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 mb-3">
-              <div className="h-px w-8" style={{ backgroundColor: "#B8935A" }} />
-              <span style={{ color: "#B8935A" }} className="text-xs tracking-widest uppercase font-medium">
+              <div className="h-px w-8" style={{ backgroundColor: "#C5A880" }} />
+              <span style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase font-medium">
                 What We Do
               </span>
-              <div className="h-px w-8" style={{ backgroundColor: "#B8935A" }} />
+              <div className="h-px w-8" style={{ backgroundColor: "#C5A880" }} />
             </div>
-            <h2 style={{ color: "#2C2416" }} className="mb-3">Our Design Services</h2>
+            <h2 style={{ color: "#2C3531" }} className="mb-3">Our Design Services</h2>
             <p className="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">
               From a single room refresh to a complete home or commercial transformation — we handle every detail.
             </p>
@@ -79,23 +79,23 @@ export function CoreOfferings() {
                 <div
                   key={item.title}
                   className="relative border border-gray-100 rounded-lg p-6 hover:shadow-md transition-shadow group flex flex-col"
-                  style={{ backgroundColor: "#F5F0E8" }}
+                  style={{ backgroundColor: "#EFF1EE" }}
                 >
                   {item.tag && (
                     <span
                       className="absolute top-4 right-4 text-xs px-2 py-0.5 rounded-full text-white"
-                      style={{ backgroundColor: "#B8935A" }}
+                      style={{ backgroundColor: "#C5A880" }}
                     >
                       {item.tag}
                     </span>
                   )}
                   <div
                     className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-105 transition-transform"
-                    style={{ backgroundColor: "#2C2416" }}
+                    style={{ backgroundColor: "#2C3531" }}
                   >
                     <Icon size={20} className="text-white" />
                   </div>
-                  <h3 style={{ color: "#2C2416" }} className="mb-2">{item.title}</h3>
+                  <h3 style={{ color: "#2C3531" }} className="mb-2">{item.title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed flex-1">{item.description}</p>
 
                   {/* CTA buttons */}
@@ -103,14 +103,14 @@ export function CoreOfferings() {
                     <button
                       onClick={() => setGalleryCategory(item.title)}
                       className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded text-xs font-semibold border transition-all hover:shadow-sm active:scale-95"
-                      style={{ borderColor: "#2C2416", color: "#2C2416", backgroundColor: "transparent" }}
+                      style={{ borderColor: "#2C3531", color: "#2C3531", backgroundColor: "transparent" }}
                     >
                       <Eye size={13} />
                       View Gallery
                     </button>
                     <button
                       className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded text-xs font-semibold text-white transition-all hover:opacity-90 active:scale-95"
-                      style={{ backgroundColor: "#B8935A" }}
+                      style={{ backgroundColor: "#C5A880" }}
                       onClick={() => {
                         const link = document.createElement("a");
                         link.href = "#";

@@ -102,12 +102,12 @@ export function BillingSection() {
             {/* Left */}
             <div>
               <div className="inline-flex items-center gap-2 mb-3">
-                <div className="h-px w-8" style={{ backgroundColor: "#22C55E" }} />
-                <span style={{ color: "#22C55E" }} className="text-xs tracking-widest uppercase font-medium">
+                <div className="h-px w-8" style={{ backgroundColor: "#C5A880" }} />
+                <span style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase font-medium">
                   Billing
                 </span>
               </div>
-              <h2 style={{ color: "#0F2A1E" }} className="mb-4">Billing Information</h2>
+              <h2 style={{ color: "#2C3531" }} className="mb-4">Billing Information</h2>
               <p className="text-gray-500 text-sm leading-relaxed">
                 We offer flexible, transparent billing options designed for businesses. All invoices are issued monthly with full service breakdown and applicable tax documentation.
               </p>
@@ -115,9 +115,9 @@ export function BillingSection() {
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <p className="text-gray-400 text-xs">
                   For billing inquiries, contact{" "}
-                  <span style={{ color: "#22C55E" }} className="font-medium">clean@freshspaces.lk</span>
+                  <span style={{ color: "#C5A880" }} className="font-medium">clean@freshspaces.lk</span>
                   {" "}or call{" "}
-                  <span style={{ color: "#22C55E" }} className="font-medium">077 123 4567</span>
+                  <span style={{ color: "#C5A880" }} className="font-medium">077 123 4567</span>
                 </p>
               </div>
             </div>
@@ -125,9 +125,9 @@ export function BillingSection() {
             {/* Right */}
             <div
               className="rounded-2xl p-8 border border-gray-100"
-              style={{ backgroundColor: "#F0FFF8" }}
+              style={{ backgroundColor: "#EFF1EE" }}
             >
-              <h3 style={{ color: "#0F2A1E" }} className="mb-1">Accepted Payment Methods</h3>
+              <h3 style={{ color: "#2C3531" }} className="mb-1">Accepted Payment Methods</h3>
               <p className="text-gray-400 text-sm mb-5">
                 Tap any method to view payment details.
               </p>
@@ -139,14 +139,14 @@ export function BillingSection() {
                     onClick={() => setActiveMethod(method.name)}
                     className="flex items-center gap-3 bg-white rounded-xl px-4 py-3 border transition-all text-left group"
                     style={{ borderColor: "transparent" }}
-                    onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#22C55E")}
+                    onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#C5A880")}
                     onMouseLeave={(e) => (e.currentTarget.style.borderColor = "transparent")}
                   >
-                    <div style={{ color: "#0F2A1E" }} className="shrink-0">
+                    <div style={{ color: "#2C3531" }} className="shrink-0">
                       {method.icon}
                     </div>
                     <div className="min-w-0 flex-1">
-                      <div className="text-sm font-medium truncate" style={{ color: "#0F2A1E" }}>
+                      <div className="text-sm font-medium truncate" style={{ color: "#2C3531" }}>
                         {method.name}
                       </div>
                       <div className="text-gray-400 text-xs">{method.sub}</div>
@@ -154,7 +154,7 @@ export function BillingSection() {
                     <ChevronRight
                       size={14}
                       className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
-                      style={{ color: "#22C55E" }}
+                      style={{ color: "#C5A880" }}
                     />
                   </button>
                 ))}

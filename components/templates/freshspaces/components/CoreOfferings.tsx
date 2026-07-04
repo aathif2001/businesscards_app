@@ -59,13 +59,13 @@ export function CoreOfferings() {
           {/* Section header */}
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 mb-3">
-              <div className="h-px w-8" style={{ backgroundColor: "#22C55E" }} />
-              <span style={{ color: "#22C55E" }} className="text-xs tracking-widest uppercase font-medium">
+              <div className="h-px w-8" style={{ backgroundColor: "#C5A880" }} />
+              <span style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase font-medium">
                 What We Offer
               </span>
-              <div className="h-px w-8" style={{ backgroundColor: "#22C55E" }} />
+              <div className="h-px w-8" style={{ backgroundColor: "#C5A880" }} />
             </div>
-            <h2 style={{ color: "#0F2A1E" }} className="mb-3">Our Cleaning Services</h2>
+            <h2 style={{ color: "#2C3531" }} className="mb-3">Our Cleaning Services</h2>
             <p className="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">
               Tailored facility management solutions for businesses that demand excellence, consistency, and a truly clean environment.
             </p>
@@ -79,23 +79,23 @@ export function CoreOfferings() {
                 <div
                   key={item.title}
                   className="relative border border-gray-100 rounded-xl p-6 hover:shadow-lg transition-all group flex flex-col"
-                  style={{ backgroundColor: "#FAFFFE" }}
+                  style={{ backgroundColor: "#FAFAf8" }}
                 >
                   {item.tag && (
                     <span
                       className="absolute top-4 right-4 text-xs px-2 py-0.5 rounded-full text-white"
-                      style={{ background: "#059669" }}
+                      style={{ background: "#C5A880" }}
                     >
                       {item.tag}
                     </span>
                   )}
                   <div
                     className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform"
-                    style={{ background: "#059669" }}
+                    style={{ background: "#2C3531" }}
                   >
                     <Icon size={20} className="text-white" />
                   </div>
-                  <h3 style={{ color: "#0F2A1E" }} className="mb-2 text-base font-semibold">{item.title}</h3>
+                  <h3 style={{ color: "#2C3531" }} className="mb-2 text-base font-semibold">{item.title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed flex-1">{item.description}</p>
 
                   {/* CTA buttons */}
@@ -103,7 +103,7 @@ export function CoreOfferings() {
                     <button
                       onClick={() => setGalleryCategory(item.title)}
                       className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded text-xs font-semibold border transition-all hover:shadow-sm active:scale-95"
-                      style={{ borderColor: "#22C55E", color: "#22C55E", backgroundColor: "transparent" }}
+                      style={{ borderColor: "#C5A880", color: "#C5A880", backgroundColor: "transparent" }}
                     >
                       <Eye size={13} />
                       View
@@ -111,7 +111,7 @@ export function CoreOfferings() {
                     <a
                       href="#quote"
                       className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded text-xs font-semibold text-white transition-all hover:opacity-90 active:scale-95"
-                      style={{ background: "#059669" }}
+                      style={{ background: "#C5A880" }}
                     >
                       <PhoneCall size={13} />
                       Book Now

@@ -18,8 +18,8 @@ export function FloatingNav() {
       <div
         className="flex items-center gap-1 px-3 py-2 rounded-full shadow-2xl"
         style={{
-          backgroundColor: "#2C2416",
-          boxShadow: "0 8px 32px rgba(44,36,22,0.55), 0 2px 8px rgba(0,0,0,0.2)",
+          backgroundColor: "#2C3531",
+          boxShadow: "0 8px 32px rgba(26,32,30,0.55), 0 2px 8px rgba(0,0,0,0.2)",
         }}
       >
         {navItems.map((item, i) => {
@@ -36,7 +36,7 @@ export function FloatingNav() {
               >
                 <div
                   className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg"
-                  style={{ backgroundColor: "#B8935A" }}
+                  style={{ backgroundColor: "#C5A880" }}
                 >
                   <Icon size={20} className="text-white" />
                 </div>
@@ -51,17 +51,17 @@ export function FloatingNav() {
               onClick={() => setActive(i)}
               className="flex flex-col items-center justify-center px-3 py-1.5 rounded-full transition-all"
               style={{
-                backgroundColor: isActive ? "rgba(184,147,90,0.15)" : "transparent",
+                backgroundColor: isActive ? "rgba(197,168,128,0.15)" : "transparent",
                 minWidth: 52,
               }}
             >
               <Icon
                 size={18}
-                style={{ color: isActive ? "#B8935A" : "rgba(255,255,255,0.55)" }}
+                style={{ color: isActive ? "#C5A880" : "rgba(255,255,255,0.55)" }}
               />
               <span
                 className="text-[10px] mt-0.5 leading-none"
-                style={{ color: isActive ? "#B8935A" : "rgba(255,255,255,0.45)" }}
+                style={{ color: isActive ? "#C5A880" : "rgba(255,255,255,0.45)" }}
               >
                 {item.label}
               </span>

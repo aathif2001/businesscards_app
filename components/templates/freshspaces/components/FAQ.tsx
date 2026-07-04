@@ -34,18 +34,18 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="py-20 px-4" style={{ backgroundColor: "#F0FFF8" }} id="faq">
+    <section className="py-20 px-4" style={{ backgroundColor: "#EFF1EE" }} id="faq">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-3">
-            <div className="h-px w-8" style={{ backgroundColor: "#22C55E" }} />
-            <span style={{ color: "#22C55E" }} className="text-xs tracking-widest uppercase font-medium">
+            <div className="h-px w-8" style={{ backgroundColor: "#C5A880" }} />
+            <span style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase font-medium">
               FAQ
             </span>
-            <div className="h-px w-8" style={{ backgroundColor: "#22C55E" }} />
+            <div className="h-px w-8" style={{ backgroundColor: "#C5A880" }} />
           </div>
-          <h2 style={{ color: "#0F2A1E" }} className="mb-3">Common Questions</h2>
+          <h2 style={{ color: "#2C3531" }} className="mb-3">Common Questions</h2>
           <p className="text-gray-500 text-sm">
             Everything you need to know before partnering with FreshSpaces.
           </p>
@@ -57,19 +57,19 @@ export function FAQ() {
             <div
               key={i}
               className="bg-white rounded-xl border overflow-hidden"
-              style={{ borderColor: open === i ? "#22C55E" : "#e5e7eb" }}
+              style={{ borderColor: open === i ? "#C5A880" : "#e5e7eb" }}
             >
               <button
                 className="w-full flex items-center justify-between px-5 py-4 text-left"
                 onClick={() => setOpen(open === i ? null : i)}
               >
-                <span style={{ color: "#0F2A1E" }} className="text-sm font-medium pr-4">
+                <span style={{ color: "#2C3531" }} className="text-sm font-medium pr-4">
                   {item.q}
                 </span>
                 <ChevronDown
                   size={18}
                   style={{
-                    color: "#22C55E",
+                    color: "#C5A880",
                     transform: open === i ? "rotate(180deg)" : "rotate(0deg)",
                     transition: "transform 0.2s",
                     flexShrink: 0,

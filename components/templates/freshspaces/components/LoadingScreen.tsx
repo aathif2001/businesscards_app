@@ -37,13 +37,13 @@ export function LoadingScreen({ carouselReady }: LoadingScreenProps) {
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
                 <div
                     className="w-16 h-16 rounded-full flex items-center justify-center"
-                    style={{ background: "linear-gradient(135deg, #22C55E, #059669)" }}
+                    style={{ background: "linear-gradient(135deg, #C5A880, #C5A880)" }}
                 >
                     <span className="text-white font-bold text-2xl">FS</span>
                 </div>
                 <div className="text-center">
-                    <div style={{ color: "#0F2A1E" }} className="font-semibold text-lg">FreshSpaces</div>
-                    <div style={{ color: "#22C55E" }} className="text-xs tracking-widest uppercase">Sri Lanka</div>
+                    <div style={{ color: "#2C3531" }} className="font-semibold text-lg">FreshSpaces</div>
+                    <div style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase">Sri Lanka</div>
                 </div>
             </div>
 
@@ -55,7 +55,7 @@ export function LoadingScreen({ carouselReady }: LoadingScreenProps) {
             {/* Bottom: Progress bar */}
             <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gray-100">
                 <div className="h-full" style={{
-                    background: "linear-gradient(to right, #22C55E, #059669)",
+                    background: "linear-gradient(to right, #C5A880, #C5A880)",
                     animation: "ls-progress 2s ease-out forwards",
                 }} />
             </div>

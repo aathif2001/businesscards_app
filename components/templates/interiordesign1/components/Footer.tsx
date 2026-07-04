@@ -21,10 +21,10 @@ export function Footer() {
   ];
 
   return (
-    <footer style={{ backgroundColor: "#1A1208" }} className="text-gray-300">
+    <footer style={{ backgroundColor: "#1A201E" }} className="text-gray-300">
 
       {/* CTA banner */}
-      <div style={{ backgroundColor: "#B8935A" }} className="py-8 px-4">
+      <div style={{ backgroundColor: "#C5A880" }} className="py-8 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <p className="text-white font-semibold text-base">Ready to transform your space?</p>
@@ -32,7 +32,7 @@ export function Footer() {
           </div>
           <a href="#consult">
             <button
-              style={{ backgroundColor: "#1A1208" }}
+              style={{ backgroundColor: "#1A201E" }}
               className="text-white px-6 py-2.5 rounded hover:opacity-90 transition-opacity text-sm font-medium whitespace-nowrap"
             >
               Book a Free Consultation
@@ -53,13 +53,13 @@ export function Footer() {
               >
                 <div
                   className="absolute inset-0 rounded-sm rotate-45"
-                  style={{ border: "1.5px solid #B8935A" }}
+                  style={{ border: "1.5px solid #C5A880" }}
                 />
-                <span style={{ color: "#B8935A", fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>ID</span>
+                <span style={{ color: "#C5A880", fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>ID</span>
               </div>
               <div className="leading-tight">
                 <div className="text-white font-semibold text-sm">Studio</div>
-                <div style={{ color: "#B8935A" }} className="text-xs tracking-widest uppercase">Interiors</div>
+                <div style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase">Interiors</div>
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
@@ -90,7 +90,7 @@ export function Footer() {
                     href={link.href}
                     className="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-1.5"
                   >
-                    <span style={{ color: "#B8935A" }}>›</span> {link.label}
+                    <span style={{ color: "#C5A880" }}>›</span> {link.label}
                   </a>
                 </li>
               ))}
@@ -107,7 +107,7 @@ export function Footer() {
                     href="#services"
                     className="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-1.5"
                   >
-                    <span style={{ color: "#B8935A" }}>›</span> {service}
+                    <span style={{ color: "#C5A880" }}>›</span> {service}
                   </a>
                 </li>
               ))}
@@ -120,7 +120,7 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-start gap-2.5">
                 <a href="https://maps.google.com" className="flex items-center gap-2.5">
-                  <MapPin size={14} style={{ color: "#B8935A" }} className="mt-0.5 shrink-0" />
+                  <MapPin size={14} style={{ color: "#C5A880" }} className="mt-0.5 shrink-0" />
                   <span className="text-gray-400 text-sm">
                     12 Flower Road, Colombo 07, Sri Lanka
                   </span>
@@ -129,14 +129,14 @@ export function Footer() {
 
               <div className="flex items-center gap-2.5">
                 <a href="tel:+94771234567" className="flex items-center gap-2.5">
-                  <Phone size={14} style={{ color: "#B8935A" }} />
+                  <Phone size={14} style={{ color: "#C5A880" }} />
                   <span className="text-gray-400 text-sm">+94 77 123 4567</span>
                 </a>
               </div>
 
               <div className="flex items-center gap-2.5">
                 <a href="mailto:hello@studiointeriors.lk" className="flex items-center gap-2.5">
-                  <Mail size={14} style={{ color: "#B8935A" }} />
+                  <Mail size={14} style={{ color: "#C5A880" }} />
                   <span className="text-gray-400 text-sm">hello@studiointeriors.lk</span>
                 </a>
               </div>

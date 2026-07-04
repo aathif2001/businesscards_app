@@ -118,7 +118,7 @@ export function PackageDetailModal({ packageName, onClose }: PackageDetailModalP
     >
       <div
         className="w-full max-w-md rounded-2xl overflow-hidden"
-        style={{ backgroundColor: "#2C2416" }}
+        style={{ backgroundColor: "#2C3531" }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -127,7 +127,7 @@ export function PackageDetailModal({ packageName, onClose }: PackageDetailModalP
           style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}
         >
           <div>
-            <p style={{ color: "#B8935A" }} className="text-xs tracking-widest uppercase font-medium mb-0.5">
+            <p style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase font-medium mb-0.5">
               Package Details
             </p>
             <h3 className="text-white">{detail.title}</h3>
@@ -158,7 +158,7 @@ export function PackageDetailModal({ packageName, onClose }: PackageDetailModalP
           {detail.note && (
             <div
               className="rounded-lg px-4 py-3 mt-2"
-              style={{ backgroundColor: "rgba(184,147,90,0.1)", borderLeft: "3px solid #B8935A" }}
+              style={{ backgroundColor: "rgba(197,168,128,0.1)", borderLeft: "3px solid #C5A880" }}
             >
               <p className="text-gray-300 text-xs leading-relaxed">{detail.note}</p>
             </div>
@@ -174,7 +174,7 @@ export function PackageDetailModal({ packageName, onClose }: PackageDetailModalP
             <button
               onClick={onClose}
               className="w-full py-2.5 rounded-lg text-white text-sm font-medium transition-opacity hover:opacity-90"
-              style={{ backgroundColor: "#B8935A" }}
+              style={{ backgroundColor: "#C5A880" }}
             >
               Book a Free Consultation
             </button>

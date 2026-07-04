@@ -124,12 +124,12 @@ function CopyField({ label, value }: { label: string; value: string }) {
       <button
         onClick={copy}
         className="shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all hover:scale-110 active:scale-95"
-        style={{ backgroundColor: copied ? "#22c55e22" : "rgba(34,197,94,0.18)" }}
+        style={{ backgroundColor: copied ? "#C5A88022" : "rgba(197,168,128,0.18)" }}
         title="Copy to clipboard"
       >
         {copied
           ? <Check size={14} className="text-green-400" />
-          : <Copy size={14} style={{ color: "#22C55E" }} />
+          : <Copy size={14} style={{ color: "#C5A880" }} />
         }
       </button>
     </div>
@@ -160,12 +160,12 @@ export function PaymentModal({ method, onClose }: PaymentModalProps) {
   return (
     <div
       className="fixed inset-0 flex items-center justify-center z-50 px-4"
-      style={{ backgroundColor: "rgba(11,31,21,0.93)", backdropFilter: "blur(6px)" }}
+      style={{ backgroundColor: "rgba(26,32,30,0.93)", backdropFilter: "blur(6px)" }}
       onClick={onClose}
     >
       <div
         className="w-full max-w-md rounded-2xl overflow-hidden"
-        style={{ backgroundColor: "#0F2A1E" }}
+        style={{ backgroundColor: "#1A201E" }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -174,7 +174,7 @@ export function PaymentModal({ method, onClose }: PaymentModalProps) {
           style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}
         >
           <div>
-            <p style={{ color: "#22C55E" }} className="text-xs tracking-widest uppercase font-medium mb-0.5">
+            <p style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase font-medium mb-0.5">
               Payment Details
             </p>
             <h3 className="text-white">{detail.title}</h3>
@@ -202,7 +202,7 @@ export function PaymentModal({ method, onClose }: PaymentModalProps) {
           {detail.note && (
             <div
               className="rounded-xl px-4 py-3 mt-2"
-              style={{ backgroundColor: "rgba(34,197,94,0.1)", borderLeft: "3px solid #22C55E" }}
+              style={{ backgroundColor: "rgba(197,168,128,0.1)", borderLeft: "3px solid #C5A880" }}
             >
               <p className="text-gray-300 text-xs leading-relaxed">{detail.note}</p>
             </div>
@@ -217,7 +217,7 @@ export function PaymentModal({ method, onClose }: PaymentModalProps) {
           <button
             onClick={onClose}
             className="w-full py-2.5 rounded-xl text-white text-sm font-medium transition-opacity hover:opacity-90"
-            style={{ background: "linear-gradient(135deg, #22C55E, #059669)" }}
+            style={{ background: "linear-gradient(135deg, #C5A880, #C5A880)" }}
           >
             Done
           </button>

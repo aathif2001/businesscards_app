@@ -4,7 +4,7 @@ export function HeroSection() {
   return (
     <section
       className="relative w-full py-20 px-4 overflow-hidden"
-      style={{ backgroundColor: "#0F2A1E" }}
+      style={{ background: "linear-gradient(#1A201E 0%, #2C3531 50%, #1A201E 100%)" }}
     >
       {/* Subtle texture overlay */}
       <div
@@ -22,8 +22,8 @@ export function HeroSection() {
         <div className="max-w-2xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 mb-6">
-            <div className="h-px w-8" style={{ backgroundColor: "#22C55E" }} />
-            <span style={{ color: "#22C55E" }} className="text-xs tracking-widest uppercase font-medium">
+            <div className="h-px w-8" style={{ backgroundColor: "#C5A880" }} />
+            <span style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase font-medium">
               Commercial Cleaning Services
             </span>
           </div>
@@ -31,8 +31,8 @@ export function HeroSection() {
           <h1 className="text-white mb-4" style={{ fontSize: "2.5rem", lineHeight: "1.2", fontWeight: 700 }}>
             A Spotless Workplace,
             <br />
-            <span style={{ color: "#22C55E" }}>A Happier</span>{" "}
-            <span style={{ color: "#059669" }}>Team.</span>
+            <span style={{ color: "#C5A880" }}>A Happier</span>{" "}
+            <span style={{ color: "#C5A880" }}>Team.</span>
           </h1>
 
           <p className="text-gray-300 mb-8 text-base leading-relaxed max-w-lg">
@@ -43,7 +43,7 @@ export function HeroSection() {
           <div className="flex flex-wrap gap-4">
             <a href="#services">
               <button
-                style={{ backgroundColor: "#059669" }}
+                style={{ backgroundColor: "#C5A880" }}
                 className="text-white px-6 py-3 rounded flex items-center gap-2 hover:opacity-90 transition-opacity font-medium"
               >
                 Explore Our Services
@@ -61,7 +61,7 @@ export function HeroSection() {
           <div className="mt-12 flex flex-wrap items-center gap-6">
             <div className="flex items-center gap-1">
               {[1, 2, 3, 4, 5].map((s) => (
-                <Star key={s} size={14} fill="#22C55E" style={{ color: "#22C55E" }} />
+                <Star key={s} size={14} fill="#C5A880" style={{ color: "#C5A880" }} />
               ))}
               <span className="text-gray-400 text-xs ml-2">5.0/5 Client Rating</span>
             </div>

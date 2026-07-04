@@ -66,7 +66,7 @@ export function GalleryModal({ category, onClose }: GalleryModalProps) {
         style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}
       >
         <div>
-          <p style={{ color: "#B8935A" }} className="text-xs tracking-widest uppercase font-medium mb-0.5">
+          <p style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase font-medium mb-0.5">
             Portfolio Gallery
           </p>
           <h3 className="text-white">{category}</h3>

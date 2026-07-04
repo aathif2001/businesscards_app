@@ -26,18 +26,18 @@ const testimonials = [
 
 export function TrustedSection() {
   return (
-    <section className="py-20 px-4" style={{ backgroundColor: "#FAF8F5" }}>
+    <section className="py-20 px-4" style={{ backgroundColor: "#FAFAf8" }}>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-3">
-            <div className="h-px w-8" style={{ backgroundColor: "#B8935A" }} />
-            <span style={{ color: "#B8935A" }} className="text-xs tracking-widest uppercase font-medium">
+            <div className="h-px w-8" style={{ backgroundColor: "#C5A880" }} />
+            <span style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase font-medium">
               Client Stories
             </span>
-            <div className="h-px w-8" style={{ backgroundColor: "#B8935A" }} />
+            <div className="h-px w-8" style={{ backgroundColor: "#C5A880" }} />
           </div>
-          <h2 style={{ color: "#2C2416" }} className="mb-3">What Our Clients Say</h2>
+          <h2 style={{ color: "#2C3531" }} className="mb-3">What Our Clients Say</h2>
           <p className="text-gray-500 text-sm max-w-md mx-auto leading-relaxed">
             Hear from the homeowners, developers, and hospitality brands who trusted us to design their spaces.
           </p>
@@ -53,23 +53,23 @@ export function TrustedSection() {
                     <Star
                       key={s}
                       size={14}
-                      fill={s <= t.rating ? "#B8935A" : "none"}
-                      style={{ color: "#B8935A" }}
+                      fill={s <= t.rating ? "#C5A880" : "none"}
+                      style={{ color: "#C5A880" }}
                     />
                   ))}
                 </div>
-                <Quote size={20} style={{ color: "#B8935A40" }} />
+                <Quote size={20} style={{ color: "#C5A88040" }} />
               </div>
               <p className="text-gray-600 text-sm leading-relaxed mb-5">{t.text}</p>
               <div className="flex items-center gap-3">
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center text-white text-xs font-semibold"
-                  style={{ backgroundColor: "#2C2416" }}
+                  style={{ backgroundColor: "#2C3531" }}
                 >
                   {t.initials}
                 </div>
                 <div>
-                  <div style={{ color: "#2C2416" }} className="text-sm font-semibold">{t.name}</div>
+                  <div style={{ color: "#2C3531" }} className="text-sm font-semibold">{t.name}</div>
                   <div className="text-gray-400 text-xs">{t.role}</div>
                 </div>
               </div>

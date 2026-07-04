@@ -9,10 +9,10 @@ const stats = [
 
 export function StatsSection() {
   return (
-    <section className="py-16 px-4" style={{ background: "linear-gradient(135deg, #0B1F15 0%, #0F2A1E 100%)" }} id="stats">
+    <section className="py-16 px-4" style={{ background: "linear-gradient(135deg, #1A201E 0%, #2C3531 100%)" }} id="stats">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <span style={{ color: "#22C55E" }} className="text-xs tracking-widest uppercase font-medium">
+          <span style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase font-medium">
             Why Choose FreshSpaces
           </span>
           <h2 className="text-white mt-2">Numbers That Speak</h2>
@@ -25,12 +25,12 @@ export function StatsSection() {
               <div key={stat.label} className="text-center">
                 <div
                   className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4"
-                  style={{ backgroundColor: "rgba(34,197,94,0.15)", border: "1px solid rgba(34,197,94,0.3)" }}
+                  style={{ backgroundColor: "rgba(197,168,128,0.15)", border: "1px solid rgba(197,168,128,0.3)" }}
                 >
-                  <Icon size={22} style={{ color: "#22C55E" }} />
+                  <Icon size={22} style={{ color: "#C5A880" }} />
                 </div>
                 <div
-                  style={{ color: "#22C55E", fontSize: "2rem", fontWeight: 700, lineHeight: 1 }}
+                  style={{ color: "#C5A880", fontSize: "2rem", fontWeight: 700, lineHeight: 1 }}
                   className="mb-1"
                 >
                   {stat.value}

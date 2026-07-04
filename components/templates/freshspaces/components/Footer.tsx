@@ -21,10 +21,10 @@ export function Footer() {
   ];
 
   return (
-    <footer style={{ backgroundColor: "#0B1F15" }} className="text-gray-300">
+    <footer style={{ backgroundColor: "#1A201E" }} className="text-gray-300">
 
       {/* CTA banner */}
-      <div style={{ background: "linear-gradient(135deg, #22C55E, #059669)" }} className="py-8 px-4">
+      <div style={{ background: "linear-gradient(135deg, #C5A880, #C5A880)" }} className="py-8 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <p className="text-white font-semibold text-base">Ready for a spotless workplace?</p>
@@ -32,7 +32,7 @@ export function Footer() {
           </div>
           <a href="#quote">
             <button
-              style={{ backgroundColor: "#0B1F15" }}
+              style={{ backgroundColor: "#1A201E" }}
               className="text-white px-6 py-2.5 rounded-lg hover:opacity-90 transition-opacity text-sm font-medium whitespace-nowrap"
             >
               Get a Free Quote
@@ -49,13 +49,13 @@ export function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <div
                 className="w-10 h-10 rounded-full flex items-center justify-center"
-                style={{ background: "linear-gradient(135deg, #22C55E, #059669)" }}
+                style={{ background: "linear-gradient(135deg, #C5A880, #C5A880)" }}
               >
                 <span className="text-white font-bold text-xs">FS</span>
               </div>
               <div className="leading-tight">
                 <div className="text-white font-semibold text-sm">FreshSpaces</div>
-                <div style={{ color: "#22C55E" }} className="text-xs tracking-widest uppercase">Sri Lanka</div>
+                <div style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase">Sri Lanka</div>
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
@@ -85,7 +85,7 @@ export function Footer() {
                     href={link.href}
                     className="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-1.5"
                   >
-                    <span style={{ color: "#22C55E" }}>›</span> {link.label}
+                    <span style={{ color: "#C5A880" }}>›</span> {link.label}
                   </a>
                 </li>
               ))}
@@ -102,7 +102,7 @@ export function Footer() {
                     href="#services"
                     className="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-1.5"
                   >
-                    <span style={{ color: "#059669" }}>›</span> {service}
+                    <span style={{ color: "#C5A880" }}>›</span> {service}
                   </a>
                 </li>
               ))}
@@ -115,7 +115,7 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-start gap-2.5">
                 <a href="https://maps.google.com" className="flex items-start gap-2.5">
-                  <MapPin size={14} style={{ color: "#22C55E" }} className="mt-0.5 shrink-0" />
+                  <MapPin size={14} style={{ color: "#C5A880" }} className="mt-0.5 shrink-0" />
                   <span className="text-gray-400 text-sm">
                     12/A, High Level Road, Nugegoda
                   </span>
@@ -124,14 +124,14 @@ export function Footer() {
 
               <div className="flex items-center gap-2.5">
                 <a href="tel:+94771234567" className="flex items-center gap-2.5">
-                  <Phone size={14} style={{ color: "#22C55E" }} />
+                  <Phone size={14} style={{ color: "#C5A880" }} />
                   <span className="text-gray-400 text-sm">077 123 4567</span>
                 </a>
               </div>
 
               <div className="flex items-center gap-2.5">
                 <a href="mailto:clean@freshspaces.lk" className="flex items-center gap-2.5">
-                  <Mail size={14} style={{ color: "#059669" }} />
+                  <Mail size={14} style={{ color: "#C5A880" }} />
                   <span className="text-gray-400 text-sm">clean@freshspaces.lk</span>
                 </a>
               </div>

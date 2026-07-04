@@ -31,7 +31,7 @@ export function LoadingScreen({ carouselReady }: LoadingScreenProps) {
     return (
         <div
             className={`fixed inset-0 z-[9999] pointer-events-none transition-opacity duration-600 ${fading ? 'opacity-0' : 'opacity-100'}`}
-            style={{ backgroundColor: "#FAF8F5" }}
+            style={{ backgroundColor: "#FAFAf8" }}
         >
             {/* Center — brand mark */}
              <div className="absolute inset-0 flex items-center justify-center">
@@ -45,11 +45,11 @@ export function LoadingScreen({ carouselReady }: LoadingScreenProps) {
             </div>
 
             {/* Progress bar */}
-            <div className="absolute bottom-0 left-0 w-full h-[3px]" style={{ backgroundColor: "#F0EDE8" }}>
+            <div className="absolute bottom-0 left-0 w-full h-[3px]" style={{ backgroundColor: "#EFF1EE" }}>
                 <div
                     className="h-full"
                     style={{
-                        background: "linear-gradient(to right, #B8935A, #2C2416)",
+                        background: "linear-gradient(to right, #C5A880, #2C3531)",
                         animation: "ls-progress 2s ease-out forwards",
                     }}
                 />

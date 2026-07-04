@@ -26,18 +26,18 @@ const testimonials = [
 
 export function TrustedSection() {
   return (
-    <section className="py-20 px-4" style={{ backgroundColor: "#F0FFF8" }}>
+    <section className="py-20 px-4" style={{ backgroundColor: "#EFF1EE" }}>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-3">
-            <div className="h-px w-8" style={{ backgroundColor: "#22C55E" }} />
-            <span style={{ color: "#22C55E" }} className="text-xs tracking-widest uppercase font-medium">
+            <div className="h-px w-8" style={{ backgroundColor: "#C5A880" }} />
+            <span style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase font-medium">
               Client Stories
             </span>
-            <div className="h-px w-8" style={{ backgroundColor: "#22C55E" }} />
+            <div className="h-px w-8" style={{ backgroundColor: "#C5A880" }} />
           </div>
-          <h2 style={{ color: "#0F2A1E" }} className="mb-3">Trusted By Leading Businesses</h2>
+          <h2 style={{ color: "#2C3531" }} className="mb-3">Trusted By Leading Businesses</h2>
           <p className="text-gray-500 text-sm max-w-md mx-auto leading-relaxed">
             Hear what our clients say about partnering with FreshSpaces for their facility management needs.
           </p>
@@ -53,23 +53,23 @@ export function TrustedSection() {
                     <Star
                       key={s}
                       size={14}
-                      fill={s <= t.rating ? "#22C55E" : "none"}
-                      style={{ color: "#22C55E" }}
+                      fill={s <= t.rating ? "#C5A880" : "none"}
+                      style={{ color: "#C5A880" }}
                     />
                   ))}
                 </div>
-                <Quote size={20} style={{ color: "rgba(34,197,94,0.25)" }} />
+                <Quote size={20} style={{ color: "rgba(197,168,128,0.25)" }} />
               </div>
               <p className="text-gray-600 text-sm leading-relaxed mb-5">{t.text}</p>
               <div className="flex items-center gap-3">
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center text-white text-xs font-semibold"
-                  style={{ background: "linear-gradient(135deg, #22C55E, #059669)" }}
+                  style={{ background: "linear-gradient(135deg, #C5A880, #C5A880)" }}
                 >
                   {t.initials}
                 </div>
                 <div>
-                  <div style={{ color: "#0F2A1E" }} className="text-sm font-semibold">{t.name}</div>
+                  <div style={{ color: "#2C3531" }} className="text-sm font-semibold">{t.name}</div>
                   <div className="text-gray-400 text-xs">{t.role}</div>
                 </div>
               </div>

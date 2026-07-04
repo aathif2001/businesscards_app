@@ -58,7 +58,7 @@ export function GalleryModal({ category, onClose }: GalleryModalProps) {
   return (
     <div
       className="fixed inset-0 flex flex-col z-50"
-      style={{ backgroundColor: "rgba(11,31,21,0.97)", backdropFilter: "blur(6px)" }}
+      style={{ backgroundColor: "rgba(26,32,30,0.97)", backdropFilter: "blur(6px)" }}
     >
       {/* Header */}
       <div
@@ -66,7 +66,7 @@ export function GalleryModal({ category, onClose }: GalleryModalProps) {
         style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}
       >
         <div>
-          <p style={{ color: "#22C55E" }} className="text-xs tracking-widest uppercase font-medium mb-0.5">
+          <p style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase font-medium mb-0.5">
             Gallery
           </p>
           <h3 className="text-white">{category}</h3>

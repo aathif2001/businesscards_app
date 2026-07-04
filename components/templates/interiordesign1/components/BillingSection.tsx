@@ -102,12 +102,12 @@ export function BillingSection() {
             {/* Left */}
             <div>
               <div className="inline-flex items-center gap-2 mb-3">
-                <div className="h-px w-8" style={{ backgroundColor: "#B8935A" }} />
-                <span style={{ color: "#B8935A" }} className="text-xs tracking-widest uppercase font-medium">
+                <div className="h-px w-8" style={{ backgroundColor: "#C5A880" }} />
+                <span style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase font-medium">
                   Billing
                 </span>
               </div>
-              <h2 style={{ color: "#2C2416" }} className="mb-4">Billing Information</h2>
+              <h2 style={{ color: "#2C3531" }} className="mb-4">Billing Information</h2>
               <p className="text-gray-500 text-sm leading-relaxed">
                 We offer flexible and transparent payment options to suit your project needs.
                 All invoices are issued with full itemization and VAT breakdown.
@@ -116,9 +116,9 @@ export function BillingSection() {
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <p className="text-gray-400 text-xs">
                   For billing inquiries, contact{" "}
-                  <span style={{ color: "#B8935A" }} className="font-medium">billing@studiointeriors.lk</span>
+                  <span style={{ color: "#C5A880" }} className="font-medium">billing@studiointeriors.lk</span>
                   {" "}or call{" "}
-                  <span style={{ color: "#B8935A" }} className="font-medium">+94 77 123 4567</span>
+                  <span style={{ color: "#C5A880" }} className="font-medium">+94 77 123 4567</span>
                 </p>
               </div>
             </div>
@@ -126,9 +126,9 @@ export function BillingSection() {
             {/* Right */}
             <div
               className="rounded-xl p-8 border border-gray-100"
-              style={{ backgroundColor: "#FAF8F5" }}
+              style={{ backgroundColor: "#FAFAf8" }}
             >
-              <h3 style={{ color: "#2C2416" }} className="mb-1">Accepted Payment Methods</h3>
+              <h3 style={{ color: "#2C3531" }} className="mb-1">Accepted Payment Methods</h3>
               <p className="text-gray-400 text-sm mb-5">
                 Tap any method to view payment details.
               </p>
@@ -138,13 +138,13 @@ export function BillingSection() {
                   <button
                     key={method.name}
                     onClick={() => setActiveMethod(method.name)}
-                    className="flex items-center gap-3 bg-white rounded-lg px-4 py-3 border border-gray-100 hover:border-[#B8935A] hover:shadow-sm transition-all text-left group"
+                    className="flex items-center gap-3 bg-white rounded-lg px-4 py-3 border border-gray-100 hover:border-[#C5A880] hover:shadow-sm transition-all text-left group"
                   >
-                    <div style={{ color: "#2C2416" }} className="shrink-0">
+                    <div style={{ color: "#2C3531" }} className="shrink-0">
                       {method.icon}
                     </div>
                     <div className="min-w-0 flex-1">
-                      <div className="text-sm font-medium truncate" style={{ color: "#2C2416" }}>
+                      <div className="text-sm font-medium truncate" style={{ color: "#2C3531" }}>
                         {method.name}
                       </div>
                       <div className="text-gray-400 text-xs">{method.sub}</div>
@@ -152,7 +152,7 @@ export function BillingSection() {
                     <ChevronRight
                       size={14}
                       className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
-                      style={{ color: "#B8935A" }}
+                      style={{ color: "#C5A880" }}
                     />
                   </button>
                 ))}
