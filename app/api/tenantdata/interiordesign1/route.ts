@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { TENANT_REGISTRY } from '../../tenants';
+import { TENANT_REGISTRY } from '../tenants';
 import twilio from 'twilio';
 
 // Initialize Twilio client
