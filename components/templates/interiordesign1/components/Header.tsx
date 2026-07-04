@@ -19,7 +19,7 @@ export function Header() {
           <div className="flex items-center gap-3">
             <div
               className="w-18 h-18 flex items-center justify-center">
-              <img src="./documents/loadingscreen/studiointeriorslogoonly.svg" alt="Colombo Building Supplies" /> 
+              <img src="./documents/loadingscreen/studiointeriorslogoonly.svg" alt="Studio Interiors" /> 
             </div>
             <div className="leading-tight">
               <div className="text-white font-semibold text-sm tracking-wide">Studio</div>
