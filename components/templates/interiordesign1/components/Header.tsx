@@ -18,18 +18,12 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div
-              className="w-10 h-10 flex items-center justify-center relative"
-              style={{ flexShrink: 0 }}
-            >
-              <div
-                className="absolute inset-0 rounded-sm rotate-45"
-                style={{ border: "1.5px solid #B8935A" }}
-              />
-              <span style={{ color: "#B8935A", fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>ID</span>
+              className="w-18 h-18 flex items-center justify-center">
+              <img src="./documents/loadingscreen/studiointeriorslogoonly.svg" alt="Colombo Building Supplies" /> 
             </div>
             <div className="leading-tight">
               <div className="text-white font-semibold text-sm tracking-wide">Studio</div>
-              <div style={{ color: "#B8935A" }} className="text-xs tracking-widest uppercase">Interiors</div>
+              <div style={{ color: "#C9A227" }} className="text-xs tracking-widest uppercase">Interiors</div>
             </div>
           </div>
 
