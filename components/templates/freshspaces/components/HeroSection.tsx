@@ -43,7 +43,7 @@ export function HeroSection() {
           <div className="flex flex-wrap gap-4">
             <a href="#services">
               <button
-                style={{ backgroundColor: "#22C55E" }}
+                style={{ backgroundColor: "#059669" }}
                 className="text-white px-6 py-3 rounded flex items-center gap-2 hover:opacity-90 transition-opacity font-medium"
               >
                 Explore Our Services

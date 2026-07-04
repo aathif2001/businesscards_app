@@ -52,7 +52,7 @@ export function Header() {
             </a>
             <a href={`sms:${PHONE}?body=${encodeURIComponent(SMS_MSG)}`}>
               <button
-                style={{ background: "#22C55E" }}
+                style={{ background: "#059669" }}
                 className="text-white text-sm px-4 py-2 rounded hover:opacity-90 transition-opacity font-medium"
               >
                 Message
@@ -64,7 +64,7 @@ export function Header() {
           <div className="flex md:hidden items-center">
             <a href={`sms:${PHONE}?body=${encodeURIComponent(SMS_MSG)}`}>
               <button
-                style={{ background: "linear-gradient(135deg, #22C55E, #059669)" }}
+                style={{ background: "#059669" }}
                 className="text-white text-sm px-3 py-1 rounded hover:opacity-90 transition-opacity font-medium"
               >
                 Message
