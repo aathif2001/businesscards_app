@@ -1,0 +1,171 @@
+import { Phone, Mail, MapPin } from "lucide-react";
+import { FaFacebook, FaInstagram, FaPinterest } from 'react-icons/fa';
+
+export function Footer() {
+  const footerItems = [
+    { label: "Home", href: "#" },
+    { label: "Services", href: "#services" },
+    { label: "Portfolio", href: "#stats" },
+    { label: "Consult", href: "#consult" },
+    { label: "FAQ", href: "#faq" },
+    { label: "Payment", href: "#billing" },
+  ];
+
+  const services = [
+    "Living Room Design",
+    "Bedroom & Suite Design",
+    "Kitchen & Dining Design",
+    "Commercial Interiors",
+    "Color & Material Consulting",
+    "Furniture & Décor Sourcing",
+  ];
+
+  return (
+    <footer style={{ backgroundColor: "#1A1208" }} className="text-gray-300">
+
+      {/* CTA banner */}
+      <div style={{ backgroundColor: "#B8935A" }} className="py-8 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <p className="text-white font-semibold text-base">Ready to transform your space?</p>
+            <p className="text-white/80 text-sm">Book a free consultation and let&apos;s bring your vision to life.</p>
+          </div>
+          <a href="#consult">
+            <button
+              style={{ backgroundColor: "#1A1208" }}
+              className="text-white px-6 py-2.5 rounded hover:opacity-90 transition-opacity text-sm font-medium whitespace-nowrap"
+            >
+              Book a Free Consultation
+            </button>
+          </a>
+        </div>
+      </div>
+
+      {/* Main footer */}
+      <div className="py-14 px-4">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Brand */}
+          <div>
+            <div className="flex items-center gap-3 mb-4">
+              <div
+                className="w-10 h-10 flex items-center justify-center relative"
+                style={{ flexShrink: 0 }}
+              >
+                <div
+                  className="absolute inset-0 rounded-sm rotate-45"
+                  style={{ border: "1.5px solid #B8935A" }}
+                />
+                <span style={{ color: "#B8935A", fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>ID</span>
+              </div>
+              <div className="leading-tight">
+                <div className="text-white font-semibold text-sm">Studio</div>
+                <div style={{ color: "#B8935A" }} className="text-xs tracking-widest uppercase">Interiors</div>
+              </div>
+            </div>
+            <p className="text-gray-400 text-sm leading-relaxed mb-5">
+              Crafting bespoke living and working spaces across Sri Lanka since 2010.
+              Design that tells your story.
+            </p>
+            <div className="flex gap-3">
+              {[FaFacebook, FaInstagram, FaPinterest].map((Icon, i) => (
+                <a
+                  key={i}
+                  href="#"
+                  className="w-8 h-8 rounded flex items-center justify-center transition-colors"
+                  style={{ backgroundColor: "rgba(255,255,255,0.08)" }}
+                >
+                  <Icon size={15} />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-white text-sm font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              {footerItems.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-1.5"
+                  >
+                    <span style={{ color: "#B8935A" }}>›</span> {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h4 className="text-white text-sm font-semibold mb-4">Our Services</h4>
+            <ul className="space-y-2">
+              {services.map((service) => (
+                <li key={service}>
+                  <a
+                    href="#services"
+                    className="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-1.5"
+                  >
+                    <span style={{ color: "#B8935A" }}>›</span> {service}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="text-white text-sm font-semibold mb-4">Contact Us</h4>
+            <div className="space-y-3">
+              <div className="flex items-start gap-2.5">
+                <a href="https://maps.google.com" className="flex items-center gap-2.5">
+                  <MapPin size={14} style={{ color: "#B8935A" }} className="mt-0.5 shrink-0" />
+                  <span className="text-gray-400 text-sm">
+                    12 Flower Road, Colombo 07, Sri Lanka
+                  </span>
+                </a>
+              </div>
+
+              <div className="flex items-center gap-2.5">
+                <a href="tel:+94771234567" className="flex items-center gap-2.5">
+                  <Phone size={14} style={{ color: "#B8935A" }} />
+                  <span className="text-gray-400 text-sm">+94 77 123 4567</span>
+                </a>
+              </div>
+
+              <div className="flex items-center gap-2.5">
+                <a href="mailto:hello@studiointeriors.lk" className="flex items-center gap-2.5">
+                  <Mail size={14} style={{ color: "#B8935A" }} />
+                  <span className="text-gray-400 text-sm">hello@studiointeriors.lk</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="mt-5 pt-5 border-t border-white/10">
+              <p className="text-gray-500 text-xs">Studio Hours</p>
+              <p className="text-gray-300 text-sm mt-1">Mon – Fri: 9:00am – 6:00pm</p>
+              <p className="text-gray-300 text-sm">Sat: 10:00am – 2:00pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="border-t py-5 px-4" style={{ borderColor: "rgba(255,255,255,0.08)" }}>
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+          <p className="text-gray-500 text-xs">
+            © 2026 Studio Interiors. All rights reserved.
+          </p>
+          <div className="flex gap-5">
+            {["Privacy Policy", "Terms of Service", "Sitemap"].map((item) => (
+              <a key={item} href="#" className="text-gray-500 hover:text-gray-300 text-xs transition-colors">
+                {item}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}

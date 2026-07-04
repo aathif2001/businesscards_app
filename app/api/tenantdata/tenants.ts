@@ -12,4 +12,8 @@ export const TENANT_REGISTRY: Record<string, TenantConfig> = {
     name: "Vertex Marketing",
     whatsappTo: "whatsapp:+94763671514", // Unique to them
   },
+  studiointeriors: {
+    name: "Studio Interiors",
+    whatsappTo: "whatsapp:+94771234567", // Unique to them — update with real number
+  },
 };

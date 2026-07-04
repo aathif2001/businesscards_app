@@ -39,12 +39,12 @@ export function LoadingScreen({ carouselReady }: LoadingScreenProps) {
 
             {/* Center logo */}
             <div className="absolute inset-0 flex items-center justify-center">
-                <img src="./documents/loadingscreen/logo.svg" alt="Colombo Building Supplies" style={{ width: 100}} />    
+                <img src="./documents/loadingscreen/colombobuildingsupplies.svg" alt="Colombo Building Supplies" style={{ width: 100}} />    
             </div>  
 
             {/* ── Bottom-left: Powered By ── */}
             <div className="absolute bottom-6 right-6 flex items-center gap-2 opacity-100">
-                <img src="./documents/loadingscreen/poweredby.png" alt="Powered by" style={{ height: 40}} />
+                <img src="./poweredby.png" alt="Powered by" style={{ height: 50}} />
             </div>
 
             {/* ── Bottom: Progress bar ── */}
