@@ -24,4 +24,8 @@ export const TENANT_REGISTRY: Record<string, TenantConfig> = {
     name: "Glow Beauty Lounge",
     whatsappTo: "whatsapp:+94772223344", // Update with real number
   },
+  lensandlight: {
+    name: "Lens & Light Studios",
+    whatsappTo: "whatsapp:+94701112233", // Update with real number
+  },
 };

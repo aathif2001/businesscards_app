@@ -3,6 +3,7 @@ import InteriorDesign1 from '../../components/templates/interiordesign1/PageView
 import FreshSpaces from '../../components/templates/freshspaces/PageView';
 import LankaTradeLink from '../../components/templates/lankatradelink/PageView';
 import GlowBeauty from '../../components/templates/glowbeauty/PageView';
+import LensAndLight from '../../components/templates/lensandlight/PageView';
 import { notFound } from 'next/navigation';
 
 export default async function TenantPage({ params }: { params: Promise<{ tenantSlug: string }> }) {
@@ -26,6 +27,10 @@ export default async function TenantPage({ params }: { params: Promise<{ tenantS
 
   if (tenantSlug === 'glowbeauty') {
     return <GlowBeauty />; // Glow Beauty Lounge — Salon
+  }
+
+  if (tenantSlug === 'lensandlight') {
+    return <LensAndLight />; // Lens & Light Studios — Photography
   }
 
   return notFound();
