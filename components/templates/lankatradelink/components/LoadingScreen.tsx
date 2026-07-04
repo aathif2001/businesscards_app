@@ -33,19 +33,10 @@ export function LoadingScreen({ carouselReady }: LoadingScreenProps) {
             className={`fixed inset-0 z-[9999] pointer-events-none transition-opacity duration-300 ${fading ? 'opacity-0' : 'opacity-100'}`}
             style={{ backgroundColor: "#FFFDF9" }}
         >
-            {/* Center logo */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                <div
-                    className="w-16 h-16 rounded-xl flex items-center justify-center"
-                    style={{ backgroundColor: "#3D2314" }}
-                >
-                    <span style={{ color: "#D4A359" }} className="font-bold text-2xl">LTL</span>
-                </div>
-                <div className="text-center">
-                    <div style={{ color: "#3D2314" }} className="font-semibold text-lg">Lanka Trade Link</div>
-                    <div style={{ color: "#D4A359" }} className="text-xs tracking-widest uppercase">Wholesale Importers</div>
-                </div>
-            </div>
+            {/* Center — brand mark */}
+             <div className="absolute inset-0 flex items-center justify-center">
+                <img src="./documents/loadingscreen/LankaTradeLink.svg" alt="Colombo Building Supplies" style={{ width: 125}} />    
+            </div>  
 
             {/* Bottom-right: Powered By */}
             <div className="absolute bottom-6 right-6">

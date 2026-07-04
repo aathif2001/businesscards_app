@@ -25,16 +25,14 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+         <div className="flex items-center gap-3">
             <div
-              className="w-10 h-10 rounded-lg flex items-center justify-center"
-              style={{ backgroundColor: "#D4A359" }}
-            >
-              <span className="text-white font-bold text-sm">LTL</span>
+              className="w-12 h-12 flex items-center justify-center">
+              <img src="./documents/loadingscreen/LankaTradeLinklogoonly.svg" alt="Studio Interiors" /> 
             </div>
             <div className="leading-tight">
-              <div className="text-white font-semibold text-sm tracking-wide">Lanka Trade Link</div>
-              <div style={{ color: "#D4A359" }} className="text-xs tracking-widest uppercase opacity-75">Wholesale Importers</div>
+              <div className="text-white font-semibold text-sm tracking-wide">LANKA TRADE</div>
+              <div style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase">LINK</div>
             </div>
           </div>
 

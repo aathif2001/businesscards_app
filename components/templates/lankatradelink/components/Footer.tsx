@@ -43,9 +43,10 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#D4A359" }}>
-                <span className="text-white font-bold text-xs">LTL</span>
-              </div>
+              <div
+              className="w-12 h-12 flex items-center justify-center">
+              <img src="./documents/loadingscreen/LankaTradeLinklogoonly.svg" alt="Studio Interiors" /> 
+            </div>
               <div className="leading-tight">
                 <div className="text-white font-semibold text-sm">Lanka Trade Link</div>
                 <div style={{ color: "#D4A359" }} className="text-xs tracking-widest uppercase opacity-80">Wholesale Importers</div>

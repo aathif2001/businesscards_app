@@ -20,10 +20,8 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div
-              className="w-10 h-10 rounded-full flex items-center justify-center"
-              style={{ background: "linear-gradient(135deg, #C5A880, #C5A880)" }}
-            >
-              <span className="text-white font-bold text-sm">FS</span>
+              className="w-15 h-15 flex items-center justify-center pt-3">
+              <img src="./documents/loadingscreen/freshspaceslogoonly.svg" alt="Studio Interiors" /> 
             </div>
             <div className="leading-tight">
               <div className="text-white font-semibold text-sm tracking-wide">FreshSpaces</div>

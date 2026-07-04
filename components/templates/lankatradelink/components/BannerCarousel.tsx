@@ -21,7 +21,7 @@ const slides = [
     description: "Flour, sugar, butter, yeast and more — everything your bakery needs, delivered straight from Pettah.",
   },
   {
-    url: "https://images.unsplash.com/photo-1596591868231-05e808e40fed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+    url: "https://images.unsplash.com/photo-1758745464235-ccb8c1253074?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
     tag: "Spices & Dry Rations",
     title: "Authentic Spices\n& Dry Rations",
     description: "Import-grade spices and dry rations sourced from trusted growers — consistent quality, competitive pricing.",

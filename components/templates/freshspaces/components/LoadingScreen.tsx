@@ -34,17 +34,8 @@ export function LoadingScreen({ carouselReady }: LoadingScreenProps) {
             style={{ backgroundColor: "#ffffff" }}
         >
             {/* Center logo / brand mark */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                <div
-                    className="w-16 h-16 rounded-full flex items-center justify-center"
-                    style={{ background: "linear-gradient(135deg, #C5A880, #C5A880)" }}
-                >
-                    <span className="text-white font-bold text-2xl">FS</span>
-                </div>
-                <div className="text-center">
-                    <div style={{ color: "#2C3531" }} className="font-semibold text-lg">FreshSpaces</div>
-                    <div style={{ color: "#C5A880" }} className="text-xs tracking-widest uppercase">Sri Lanka</div>
-                </div>
+            <div className="absolute inset-0 flex items-center justify-center">
+                <img src="./documents/loadingscreen/freshspaces.svg" alt="Colombo Building Supplies" style={{ width: 125 }} />
             </div>
 
             {/* Bottom-right: Powered By */}
