@@ -21,12 +21,11 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-sm flex items-center justify-center" style={{ backgroundColor: "#E5A96A" }}>
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" className="w-5 h-5">
-                <circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="9" strokeOpacity="0.4"/>
-                <path d="M9 2h6l1 3H8L9 2z"/><circle cx="4" cy="6" r="1" fill="white" stroke="none"/>
-              </svg>
+            <div
+              className="w-9 h-9 flex items-center justify-center">
+              <img src="./documents/loadingscreen/lensandlightlogoonly.svg" alt="Lens And Light" /> 
             </div>
+
             <div className="leading-tight">
               <div className="text-white font-semibold text-sm tracking-wide">Lens & Light</div>
               <div style={{ color: "#E5A96A" }} className="text-xs tracking-widest uppercase opacity-80">Studios</div>
