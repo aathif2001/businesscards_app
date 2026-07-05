@@ -52,7 +52,7 @@ export function GalleryModal({ category, onClose }: { category: string; onClose:
     <div className="fixed inset-0 flex flex-col z-50" style={{ backgroundColor: "rgba(13,13,13,0.97)", backdropFilter: "blur(6px)" }}>
       <div className="flex items-center justify-between px-5 py-4 shrink-0" style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
         <div>
-          <p style={{ color: "#E5A96A" }} className="text-xs tracking-widest uppercase font-medium mb-0.5">Gallery</p>
+          <p style={{ color: "#4c4c4e" }} className="text-xs tracking-widest uppercase font-medium mb-0.5">Gallery</p>
           <h3 className="text-white">{category}</h3>
         </div>
         <button onClick={onClose} className="w-9 h-9 rounded-sm flex items-center justify-center hover:bg-white/10 transition-colors">

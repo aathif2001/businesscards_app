@@ -71,7 +71,7 @@ function CopyField({ label, value }: { label: string; value: string }) {
       <div><p className="text-gray-500 text-xs mb-0.5">{label}</p><p className="text-white text-sm font-medium break-all">{value}</p></div>
       <button onClick={copy} className="shrink-0 w-8 h-8 rounded-sm flex items-center justify-center transition-all hover:scale-110 active:scale-95"
         style={{ backgroundColor: copied ? "#22c55e22" : "rgba(229,169,106,0.15)" }} title="Copy">
-        {copied ? <Check size={14} className="text-green-400" /> : <Copy size={14} style={{ color: "#E5A96A" }} />}
+        {copied ? <Check size={14} className="text-green-400" /> : <Copy size={14} style={{ color: "#4c4c4e" }} />}
       </button>
     </div>
   );
@@ -92,10 +92,10 @@ export function PaymentModal({ method, onClose }: { method: string; onClose: () 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 px-4"
       style={{ backgroundColor: "rgba(13,13,13,0.93)", backdropFilter: "blur(6px)" }} onClick={onClose}>
-      <div className="w-full max-w-md rounded-sm overflow-hidden" style={{ backgroundColor: "#1A1A1A" }} onClick={e => e.stopPropagation()}>
+      <div className="w-full max-w-md rounded-sm overflow-hidden" style={{ backgroundColor: "#000000" }} onClick={e => e.stopPropagation()}>
         <div className="flex items-center justify-between px-6 py-5" style={{ borderBottom: "1px solid rgba(255,255,255,0.07)" }}>
           <div>
-            <p style={{ color: "#E5A96A" }} className="text-xs tracking-widest uppercase font-medium mb-0.5">Payment Details</p>
+            <p style={{ color: "#4c4c4e" }} className="text-xs tracking-widest uppercase font-medium mb-0.5">Payment Details</p>
             <h3 className="text-white">{detail.title}</h3>
           </div>
           <button onClick={onClose} className="w-9 h-9 rounded-sm flex items-center justify-center hover:bg-white/10 transition-colors">
@@ -109,13 +109,13 @@ export function PaymentModal({ method, onClose }: { method: string; onClose: () 
             : <StaticField key={field.label} label={field.label} value={field.value} />
           )}
           {detail.note && (
-            <div className="rounded-sm px-4 py-3 mt-3" style={{ backgroundColor: "rgba(229,169,106,0.1)", borderLeft: "3px solid #E5A96A" }}>
+            <div className="rounded-sm px-4 py-3 mt-3" style={{ backgroundColor: "rgba(229,169,106,0.1)", borderLeft: "3px solid #4c4c4e" }}>
               <p className="text-gray-400 text-xs leading-relaxed">{detail.note}</p>
             </div>
           )}
         </div>
         <div className="px-6 py-4" style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}>
-          <button onClick={onClose} className="w-full py-2.5 rounded-sm text-white text-sm font-medium hover:opacity-90 transition-opacity" style={{ backgroundColor: "#E5A96A" }}>
+          <button onClick={onClose} className="w-full py-2.5 rounded-sm text-white text-sm font-medium hover:opacity-90 transition-opacity" style={{ backgroundColor: "#4c4c4e" }}>
             Done
           </button>
         </div>

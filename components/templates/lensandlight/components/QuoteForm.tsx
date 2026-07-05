@@ -34,15 +34,15 @@ export function QuoteForm() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <div className="inline-flex items-center gap-2 mb-3">
-              <div className="h-px w-8" style={{ backgroundColor: "#E5A96A" }} />
-              <span style={{ color: "#E5A96A" }} className="text-xs tracking-widest uppercase font-medium">Book a Session</span>
+              <div className="h-px w-8" style={{ backgroundColor: "#4c4c4e" }} />
+              <span style={{ color: "#4c4c4e" }} className="text-xs tracking-widest uppercase font-medium">Book a Session</span>
             </div>
-            <h2 style={{ color: "#1A1A1A" }} className="mb-4">Let&apos;s Shoot Together</h2>
+            <h2 style={{ color: "#000000" }} className="mb-4">Let&apos;s Shoot Together</h2>
             <p className="text-gray-500 text-sm leading-relaxed">Tell us about your project and we&apos;ll come back to you with a custom package. Weddings, portraits, commercial — we cover it all.</p>
             <div className="mt-8 space-y-3">
               {["48-hour sneak peek on every booking", "Full-resolution digital gallery delivery", "Custom albums and print packages available", "Licensed drone operator for aerial shots"].map(item => (
                 <div key={item} className="flex items-center gap-2.5">
-                  <CheckCircle size={16} style={{ color: "#E5A96A" }} />
+                  <CheckCircle size={16} style={{ color: "#4c4c4e" }} />
                   <span className="text-gray-600 text-sm">{item}</span>
                 </div>
               ))}
@@ -51,12 +51,12 @@ export function QuoteForm() {
           <div className="rounded-sm p-8 border border-gray-100" style={{ backgroundColor: "#F3F3F4" }}>
             {submitted ? (
               <div className="text-center py-12">
-                <div className="w-16 h-16 rounded-sm flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: "#E5A96A" }}>
+                <div className="w-16 h-16 rounded-sm flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: "#4c4c4e" }}>
                   <CheckCircle size={32} className="text-white" />
                 </div>
-                <h3 style={{ color: "#1A1A1A" }} className="mb-2">Booking Request Sent!</h3>
+                <h3 style={{ color: "#000000" }} className="mb-2">Booking Request Sent!</h3>
                 <p className="text-gray-500 text-sm">Thank you, {form.name || "there"}. We&apos;ll be in touch with availability and packages shortly.</p>
-                <button onClick={() => setSubmitted(false)} style={{ color: "#E5A96A" }} className="mt-6 text-sm underline hover:opacity-80">Submit another request</button>
+                <button onClick={() => setSubmitted(false)} style={{ color: "#4c4c4e" }} className="mt-6 text-sm underline hover:opacity-80">Submit another request</button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -64,34 +64,34 @@ export function QuoteForm() {
                   {[{ name: "name", label: "Full Name *", placeholder: "e.g. Thilini Perera", type: "text", required: true },
                     { name: "email", label: "Email Address *", placeholder: "you@email.com", type: "email", required: true }].map(f => (
                     <div key={f.name}>
-                      <label className="block text-xs font-medium mb-1" style={{ color: "#1A1A1A" }}>{f.label}</label>
+                      <label className="block text-xs font-medium mb-1" style={{ color: "#000000" }}>{f.label}</label>
                       <input name={f.name} type={f.type} value={(form as Record<string, string>)[f.name]} onChange={handleChange} required={f.required} placeholder={f.placeholder}
                         className="w-full px-3 py-2.5 rounded-sm border text-gray-900 bg-white text-sm focus:outline-none"
                         style={{ borderColor: "#e5e7eb" }}
-                        onFocus={e => (e.target.style.borderColor = "#E5A96A")}
+                        onFocus={e => (e.target.style.borderColor = "#4c4c4e")}
                         onBlur={e => (e.target.style.borderColor = "#e5e7eb")} />
                     </div>
                   ))}
                 </div>
                 <div>
-                  <label className="block text-xs font-medium mb-1" style={{ color: "#1A1A1A" }}>Phone Number</label>
+                  <label className="block text-xs font-medium mb-1" style={{ color: "#000000" }}>Phone Number</label>
                   <input name="phone" value={form.phone} onChange={handleChange} placeholder="+94 70 000 0000"
                     className="w-full px-3 py-2.5 rounded-sm border text-gray-900 bg-white text-sm focus:outline-none"
                     style={{ borderColor: "#e5e7eb" }}
-                    onFocus={e => (e.target.style.borderColor = "#E5A96A")}
+                    onFocus={e => (e.target.style.borderColor = "#4c4c4e")}
                     onBlur={e => (e.target.style.borderColor = "#e5e7eb")} />
                 </div>
                 <div>
-                  <label className="block text-xs font-medium mb-1" style={{ color: "#1A1A1A" }}>Your Enquiry</label>
+                  <label className="block text-xs font-medium mb-1" style={{ color: "#000000" }}>Your Enquiry</label>
                   <textarea name="message" value={form.message} onChange={handleChange} rows={4}
                     className="w-full px-3 py-2.5 rounded-sm border text-gray-900 bg-white text-sm focus:outline-none resize-none"
                     style={{ borderColor: "#e5e7eb" }}
-                    onFocus={e => (e.target.style.borderColor = "#E5A96A")}
+                    onFocus={e => (e.target.style.borderColor = "#4c4c4e")}
                     onBlur={e => (e.target.style.borderColor = "#e5e7eb")} />
                 </div>
                 {error && <div className="p-3 rounded bg-red-50 border border-red-200 text-red-600 text-xs">⚠️ {error}</div>}
                 <button type="submit" disabled={loading}
-                  style={{ backgroundColor: loading ? "#9ca3af" : "#1A1A1A" }}
+                  style={{ backgroundColor: loading ? "#9ca3af" : "#000000" }}
                   className="w-full text-white py-3 rounded-sm hover:opacity-90 transition-opacity font-medium text-sm disabled:cursor-not-allowed">
                   {loading ? '⏳ Sending...' : 'Send Booking Request'}
                 </button>

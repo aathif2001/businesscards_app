@@ -18,19 +18,19 @@ export function FAQ() {
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-3">
-            <div className="h-px w-8" style={{ backgroundColor: "#E5A96A" }} />
-            <span style={{ color: "#E5A96A" }} className="text-xs tracking-widest uppercase font-medium">FAQ</span>
-            <div className="h-px w-8" style={{ backgroundColor: "#E5A96A" }} />
+            <div className="h-px w-8" style={{ backgroundColor: "#4c4c4e" }} />
+            <span style={{ color: "#4c4c4e" }} className="text-xs tracking-widest uppercase font-medium">FAQ</span>
+            <div className="h-px w-8" style={{ backgroundColor: "#4c4c4e" }} />
           </div>
-          <h2 style={{ color: "#1A1A1A" }} className="mb-3">Common Questions</h2>
+          <h2 style={{ color: "#000000" }} className="mb-3">Common Questions</h2>
           <p className="text-gray-500 text-sm">Everything you need to know before booking your session.</p>
         </div>
         <div className="space-y-3">
           {faqs.map((item, i) => (
-            <div key={i} className="bg-white rounded-sm border overflow-hidden" style={{ borderColor: open === i ? "#E5A96A" : "#e5e7eb" }}>
+            <div key={i} className="bg-white rounded-sm border overflow-hidden" style={{ borderColor: open === i ? "#4c4c4e" : "#e5e7eb" }}>
               <button className="w-full flex items-center justify-between px-5 py-4 text-left" onClick={() => setOpen(open === i ? null : i)}>
-                <span style={{ color: "#1A1A1A" }} className="text-sm font-medium pr-4">{item.q}</span>
-                <ChevronDown size={18} style={{ color: "#E5A96A", transform: open === i ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s", flexShrink: 0 }} />
+                <span style={{ color: "#000000" }} className="text-sm font-medium pr-4">{item.q}</span>
+                <ChevronDown size={18} style={{ color: "#4c4c4e", transform: open === i ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s", flexShrink: 0 }} />
               </button>
               {open === i && <div className="px-5 pb-4"><p className="text-gray-500 text-sm leading-relaxed">{item.a}</p></div>}
             </div>

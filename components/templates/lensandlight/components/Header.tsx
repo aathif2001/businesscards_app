@@ -16,7 +16,7 @@ const navLinks = [
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <header style={{ backgroundColor: "#1A1A1A" }} className="w-full sticky top-0 z-50">
+    <header style={{ backgroundColor: "#000000" }} className="w-full sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -28,7 +28,7 @@ export function Header() {
 
             <div className="leading-tight">
               <div className="text-white font-semibold text-sm tracking-wide">Lens & Light</div>
-              <div style={{ color: "#E5A96A" }} className="text-xs tracking-widest uppercase opacity-80">Studios</div>
+              <div style={{ color: "#4c4c4e" }} className="text-xs tracking-widest uppercase opacity-80">Studios</div>
             </div>
           </div>
 
@@ -42,11 +42,11 @@ export function Header() {
           {/* Right side */}
           <div className="hidden md:flex items-center gap-4">
             <a href={`tel:${PHONE}`} className="flex items-center gap-2.5">
-              <Phone size={14} style={{ color: "#E5A96A" }} />
+              <Phone size={14} style={{ color: "#4c4c4e" }} />
               <span className="text-sm text-gray-300">070 111 2233</span>
             </a>
             <a href={`sms:${PHONE}?body=${encodeURIComponent(SMS_MSG)}`}>
-              <button style={{ backgroundColor: "#E5A96A" }} className="text-white text-sm px-4 py-2 rounded hover:opacity-90 transition-opacity font-medium">
+              <button style={{ backgroundColor: "#4c4c4e" }} className="text-white text-sm px-4 py-2 rounded hover:opacity-90 transition-opacity font-medium">
                 Book Session
               </button>
             </a>
@@ -55,7 +55,7 @@ export function Header() {
           {/* Mobile */}
           <div className="flex md:hidden items-center gap-3">
             <a href={`sms:${PHONE}?body=${encodeURIComponent(SMS_MSG)}`}>
-              <button style={{ backgroundColor: "#E5A96A" }} className="text-white text-sm px-3 py-1.5 rounded font-medium">Book</button>
+              <button style={{ backgroundColor: "#4c4c4e" }} className="text-white text-sm px-3 py-1.5 rounded font-medium">Book</button>
             </a>
             <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-300 hover:text-white p-1">
               <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">

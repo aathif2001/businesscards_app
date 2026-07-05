@@ -9,10 +9,10 @@ const stats = [
 
 export function StatsSection() {
   return (
-    <section className="py-16 px-4" style={{ backgroundColor: "#1A1A1A" }} id="stats">
+    <section className="py-16 px-4" style={{ backgroundColor: "#000000" }} id="stats">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <span style={{ color: "#E5A96A" }} className="text-xs tracking-widest uppercase font-medium">The Numbers</span>
+          <span style={{ color: "#4c4c4e" }} className="text-xs tracking-widest uppercase font-medium">The Numbers</span>
           <h2 className="text-white mt-2">Our Track Record</h2>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -22,9 +22,9 @@ export function StatsSection() {
               <div key={stat.label} className="text-center">
                 <div className="w-14 h-14 rounded-sm flex items-center justify-center mx-auto mb-4"
                   style={{ backgroundColor: "rgba(229,169,106,0.12)", border: "1px solid rgba(229,169,106,0.3)" }}>
-                  <Icon size={22} style={{ color: "#E5A96A" }} />
+                  <Icon size={22} style={{ color: "#4c4c4e" }} />
                 </div>
-                <div style={{ color: "#E5A96A", fontSize: "1.5rem", fontWeight: 700, lineHeight: 1 }} className="mb-1">{stat.value}</div>
+                <div style={{ color: "#4c4c4e", fontSize: "1.5rem", fontWeight: 700, lineHeight: 1 }} className="mb-1">{stat.value}</div>
                 <div className="text-white text-sm font-medium mb-0.5">{stat.label}</div>
                 <div className="text-gray-500 text-xs">{stat.sub}</div>
               </div>

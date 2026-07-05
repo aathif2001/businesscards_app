@@ -21,31 +21,31 @@ export function BillingSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="inline-flex items-center gap-2 mb-3">
-                <div className="h-px w-8" style={{ backgroundColor: "#E5A96A" }} />
-                <span style={{ color: "#E5A96A" }} className="text-xs tracking-widest uppercase font-medium">Payment</span>
+                <div className="h-px w-8" style={{ backgroundColor: "#4c4c4e" }} />
+                <span style={{ color: "#4c4c4e" }} className="text-xs tracking-widest uppercase font-medium">Payment</span>
               </div>
-              <h2 style={{ color: "#1A1A1A" }} className="mb-4">Session Fees & Payment</h2>
+              <h2 style={{ color: "#000000" }} className="mb-4">Session Fees & Payment</h2>
               <p className="text-gray-500 text-sm leading-relaxed">All bookings require a 50% retainer to secure your date. The balance is due on the day of the shoot. Tap any method below for bank and transfer details.</p>
               <div className="mt-8 pt-6 border-t border-gray-100">
-                <p className="text-gray-400 text-xs">Billing enquiries: <span style={{ color: "#E5A96A" }} className="font-medium">shoot@lensandlight.lk</span> or <span style={{ color: "#E5A96A" }} className="font-medium">070 111 2233</span></p>
+                <p className="text-gray-400 text-xs">Billing enquiries: <span style={{ color: "#4c4c4e" }} className="font-medium">shoot@lensandlight.lk</span> or <span style={{ color: "#4c4c4e" }} className="font-medium">070 111 2233</span></p>
               </div>
             </div>
             <div className="rounded-sm p-8 border border-gray-100" style={{ backgroundColor: "#F3F3F4" }}>
-              <h3 style={{ color: "#1A1A1A" }} className="mb-1">Accepted Payment Methods</h3>
+              <h3 style={{ color: "#000000" }} className="mb-1">Accepted Payment Methods</h3>
               <p className="text-gray-500 text-sm mb-5">Tap any method to view transfer details.</p>
               <div className="grid grid-cols-2 gap-3">
                 {paymentMethods.map(method => (
                   <button key={method.name} onClick={() => setActiveMethod(method.name)}
                     className="flex items-center gap-3 bg-white rounded-sm px-4 py-3 border transition-all text-left group"
                     style={{ borderColor: "transparent" }}
-                    onMouseEnter={e => (e.currentTarget.style.borderColor = "#E5A96A")}
+                    onMouseEnter={e => (e.currentTarget.style.borderColor = "#4c4c4e")}
                     onMouseLeave={e => (e.currentTarget.style.borderColor = "transparent")}>
-                    <div style={{ color: "#1A1A1A" }} className="shrink-0">{method.icon}</div>
+                    <div style={{ color: "#000000" }} className="shrink-0">{method.icon}</div>
                     <div className="min-w-0 flex-1">
-                      <div className="text-sm font-medium truncate" style={{ color: "#1A1A1A" }}>{method.name}</div>
+                      <div className="text-sm font-medium truncate" style={{ color: "#000000" }}>{method.name}</div>
                       <div className="text-gray-400 text-xs">{method.sub}</div>
                     </div>
-                    <ChevronRight size={14} className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: "#E5A96A" }} />
+                    <ChevronRight size={14} className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: "#4c4c4e" }} />
                   </button>
                 ))}
               </div>

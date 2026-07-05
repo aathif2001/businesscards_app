@@ -36,7 +36,7 @@ export function LoadingScreen({ carouselReady }: LoadingScreenProps) {
         <img src="./poweredby.png" alt="Powered by" style={{ height: 50 }} />
       </div>
       <div className="absolute bottom-0 left-0 w-full h-[3px]" style={{ backgroundColor: "#F3F3F4" }}>
-        <div className="h-full" style={{ backgroundColor: "#E5A96A", animation: "ls-progress 2s ease-out forwards" }} />
+        <div className="h-full" style={{ backgroundColor: "#4c4c4e", animation: "ls-progress 2s ease-out forwards" }} />
       </div>
       <style>{`@keyframes ls-progress { 0%{width:0%} 60%{width:75%} 100%{width:100%} }`}</style>
     </div>

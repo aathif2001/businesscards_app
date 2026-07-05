@@ -21,13 +21,13 @@ export function FloatingContactFABs() {
       style={{ top: "50%", transform: "translateY(-60%)" }}>
       <a href={`tel:${PHONE}`} aria-label="Call us"
         className="w-12 h-12 rounded-sm flex items-center justify-center shadow-xl transition-all active:scale-90 hover:scale-105"
-        style={{ backgroundColor: "#1A1A1A", boxShadow: "0 4px 16px rgba(13,13,13,0.6)", border: "2px solid rgba(229,169,106,0.4)" }}>
-        <Phone size={18} style={{ color: "#E5A96A" }} />
+        style={{ backgroundColor: "#000000", boxShadow: "0 4px 16px rgba(13,13,13,0.6)", border: "2px solid rgba(229,169,106,0.4)" }}>
+        <Phone size={18} style={{ color: "#4c4c4e" }} />
       </a>
       <a href={`mailto:${EMAIL}`} aria-label="Email us"
         className="w-12 h-12 rounded-sm flex items-center justify-center shadow-xl transition-all active:scale-90 hover:scale-105"
-        style={{ backgroundColor: "#1A1A1A", boxShadow: "0 4px 16px rgba(13,13,13,0.6)", border: "2px solid rgba(229,169,106,0.25)" }}>
-        <Mail size={18} style={{ color: "#E5A96A" }} />
+        style={{ backgroundColor: "#000000", boxShadow: "0 4px 16px rgba(13,13,13,0.6)", border: "2px solid rgba(229,169,106,0.25)" }}>
+        <Mail size={18} style={{ color: "#4c4c4e" }} />
       </a>
       <a href={`https://wa.me/${WHATSAPP}?text=Hi%20Lens%20%26%20Light%20Studios%2C%20I%20would%20like%20to%20book%20a%20photography%20session.`}
         target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us"

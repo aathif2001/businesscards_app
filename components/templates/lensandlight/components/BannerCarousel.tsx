@@ -70,7 +70,7 @@ export function BannerCarousel({ onLoaded }: BannerCarouselProps) {
           <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(13,13,13,0.88) 0%, rgba(13,13,13,0.5) 55%, rgba(13,13,13,0.15) 100%)" }} />
           <div className="absolute inset-0 flex items-end pb-12 px-6 sm:px-10 lg:px-16" style={{ zIndex: 2 }}>
             <div className="max-w-lg">
-              <span className="inline-block text-white text-xs px-3 py-1 rounded-sm mb-3 font-medium tracking-widest uppercase" style={{ backgroundColor: "#E5A96A" }}>
+              <span className="inline-block text-white text-xs px-3 py-1 rounded-sm mb-3 font-medium tracking-widest uppercase" style={{ backgroundColor: "#4c4c4e" }}>
                 {slide.tag}
               </span>
               <h2 className="text-white mb-2 leading-tight" style={{ fontSize: "clamp(1.1rem, 3.5vw, 1.75rem)", fontWeight: 700, whiteSpace: "pre-line" }}>
@@ -78,7 +78,7 @@ export function BannerCarousel({ onLoaded }: BannerCarouselProps) {
               </h2>
               <p className="text-gray-300 text-sm leading-relaxed hidden sm:block">{slide.description}</p>
               <div className="flex items-center gap-2 mt-4">
-                <span style={{ color: "#E5A96A" }} className="text-sm font-semibold">{String(current + 1).padStart(2, "0")}</span>
+                <span style={{ color: "#4c4c4e" }} className="text-sm font-semibold">{String(current + 1).padStart(2, "0")}</span>
                 <div className="h-px w-8 bg-gray-500" />
                 <span className="text-gray-500 text-sm">{String(slides.length).padStart(2, "0")}</span>
               </div>
@@ -90,8 +90,8 @@ export function BannerCarousel({ onLoaded }: BannerCarouselProps) {
       {/* Desktop CTAs */}
       <div className="absolute right-8 lg:right-14 top-1/2 -translate-y-1/2 flex-col gap-3 hidden md:flex" style={{ zIndex: 20 }}>
         {[
-          { href: `tel:${PHONE}`, label: "Call Now", Icon: Phone, bg: "#E5A96A" },
-          { href: `mailto:${EMAIL}`, label: "Email Us", Icon: Mail, bg: "#1A1A1A" },
+          { href: `tel:${PHONE}`, label: "Call Now", Icon: Phone, bg: "#4c4c4e" },
+          { href: `mailto:${EMAIL}`, label: "Email Us", Icon: Mail, bg: "#000000" },
           { href: `https://wa.me/${WHATSAPP}`, label: "WhatsApp", Icon: null, bg: "#25D366" },
         ].map(({ href, label, Icon, bg }, idx) => (
           <a key={idx} href={href} target={idx === 2 ? "_blank" : undefined} rel={idx === 2 ? "noopener noreferrer" : undefined}
@@ -120,7 +120,7 @@ export function BannerCarousel({ onLoaded }: BannerCarouselProps) {
       <div className="absolute bottom-4 right-6 sm:right-10 flex items-center gap-2" style={{ zIndex: 10 }}>
         {slides.map((_, i) => (
           <button key={i} onClick={() => goTo(i)} className="transition-all duration-300"
-            style={{ width: i === current ? 24 : 6, height: 4, borderRadius: 2, backgroundColor: i === current ? "#E5A96A" : "rgba(255,255,255,0.4)" }} />
+            style={{ width: i === current ? 24 : 6, height: 4, borderRadius: 2, backgroundColor: i === current ? "#4c4c4e" : "rgba(255,255,255,0.4)" }} />
         ))}
       </div>
     </div>

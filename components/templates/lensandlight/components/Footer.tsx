@@ -12,7 +12,7 @@ export function Footer() {
   return (
     <footer style={{ backgroundColor: "#0D0D0D" }} className="text-gray-400">
       {/* Golden Hour CTA banner */}
-      <div style={{ backgroundColor: "#E5A96A" }} className="py-8 px-4">
+      <div style={{ backgroundColor: "#4c4c4e" }} className="py-8 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <p className="text-white font-semibold text-base">Ready to capture your story?</p>
@@ -37,7 +37,7 @@ export function Footer() {
             </div>
               <div className="leading-tight">
                 <div className="text-white font-semibold text-sm">Lens & Light Studios</div>
-                <div style={{ color: "#E5A96A" }} className="text-xs tracking-widest uppercase opacity-80">Moratuwa</div>
+                <div style={{ color: "#4c4c4e" }} className="text-xs tracking-widest uppercase opacity-80">Moratuwa</div>
               </div>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed mb-5">Award-winning photography studio based in Moratuwa — capturing weddings, families, brands, and everything in between since 2012.</p>
@@ -56,7 +56,7 @@ export function Footer() {
               {footerLinks.map(link => (
                 <li key={link.label}>
                   <a href={link.href} className="text-gray-500 text-sm hover:text-white transition-colors flex items-center gap-1.5">
-                    <span style={{ color: "#E5A96A" }}>›</span> {link.label}
+                    <span style={{ color: "#4c4c4e" }}>›</span> {link.label}
                   </a>
                 </li>
               ))}
@@ -69,7 +69,7 @@ export function Footer() {
               {services.map(s => (
                 <li key={s}>
                   <a href="#services" className="text-gray-500 text-sm hover:text-white transition-colors flex items-center gap-1.5">
-                    <span style={{ color: "#E5A96A" }}>›</span> {s}
+                    <span style={{ color: "#4c4c4e" }}>›</span> {s}
                   </a>
                 </li>
               ))}
@@ -80,15 +80,15 @@ export function Footer() {
             <h4 className="text-white text-sm font-semibold mb-4">Contact Us</h4>
             <div className="space-y-3">
               <a href="https://maps.google.com" className="flex items-start gap-2.5">
-                <MapPin size={14} style={{ color: "#E5A96A" }} className="mt-0.5 shrink-0" />
+                <MapPin size={14} style={{ color: "#4c4c4e" }} className="mt-0.5 shrink-0" />
                 <span className="text-gray-500 text-sm">12, Rawathawatta, Moratuwa</span>
               </a>
               <a href="tel:+94701112233" className="flex items-center gap-2.5">
-                <Phone size={14} style={{ color: "#E5A96A" }} />
+                <Phone size={14} style={{ color: "#4c4c4e" }} />
                 <span className="text-gray-500 text-sm">070 111 2233</span>
               </a>
               <a href="mailto:shoot@lensandlight.lk" className="flex items-center gap-2.5">
-                <Mail size={14} style={{ color: "#E5A96A" }} />
+                <Mail size={14} style={{ color: "#4c4c4e" }} />
                 <span className="text-gray-500 text-sm">shoot@lensandlight.lk</span>
               </a>
             </div>
